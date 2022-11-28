@@ -1,2 +1,13 @@
-.navigation{position: fixed;top: 0px; background-color: aqua;width: 100%;}
-.footer{position: fixed;bottom: 0px; background-color: aqua;width: 100%;}
+/***** Navigation *****/
+.navigation{
+    position: fixed;top: 0px; 
+    background-color: aqua;
+    width: 100%;
+}
+
+
+/***** Footee *****/
+.footer{position: fixed;
+    bottom: 0px; 
+    background-color: aqua;width: 100%;
+}
