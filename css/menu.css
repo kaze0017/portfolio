@@ -1,13 +1,15 @@
 /***** Navigation *****/
-.navigation{
+/* .navigation{
     position: fixed;top: 0px; 
     background-color: aqua;
     width: 100%;
 }
-
+.menu ul{
+    margin: 0;padding: 0;list-style: none;
+} */
 
 /***** Footee *****/
-.footer{position: fixed;
+/* .footer{position: fixed;
     bottom: 0px; 
     background-color: aqua;width: 100%;
-}
+} */
