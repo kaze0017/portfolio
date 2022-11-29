@@ -1,13 +1,4 @@
-/***** Navigation *****/
-/* .navigation{
-    position: fixed;top: 0px; 
-    background-color: aqua;
-    width: 100%;
-}
-.menu ul{
-    margin: 0;padding: 0;list-style: none;
-} */
-
+.logo{height: 80px;width: 80px;;}
 /***** Footee *****/
 /* .footer{position: fixed;
     bottom: 0px; 
