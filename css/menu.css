@@ -1,6 +1,6 @@
-.logo{height: 80px;width: 80px;;}
+/***** Navigation *****/
+.logo{height: 50px;width: 50px;}
+nav  .navbar-collapse{justify-content:flex-end}
 /***** Footee *****/
-/* .footer{position: fixed;
-    bottom: 0px; 
-    background-color: aqua;width: 100%;
-} */
+footer .sociallink{text-align: right;}
+
