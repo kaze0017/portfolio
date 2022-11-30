@@ -1,0 +1,54 @@
+.loading{
+    position: absolute;
+    height:100vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 1; 
+    animation: 7s 1 load_loading;
+}
+.loading h1{ 
+    padding-right: 10px;
+    width: fit-content;
+    animation: typing 2s steps(15) forwards,  border-right 2s, blink-caret 0.266s step-end 15;
+    overflow: hidden; 
+    border-right: 0 solid white;
+    white-space: nowrap;
+}
+.loading  h2{
+    padding-right: 10px;
+    width: fit-content;
+    transform: translate(-200vw, -200vh);
+    animation:typing 3s steps(20) forwards, border-right 10s 1, blink-caret 0.266s step-end infinite, h-transform 1s 1 forwards;
+    animation-delay: 2s;
+    overflow: hidden; 
+    border-right: 0 solid white;
+    white-space: nowrap;}
+
+/**** Animations*****/
+@keyframes load_loading{
+    0%{width: 100vw;height: 100vh;transform: translate(0, 0);}
+    99%{width: 100vw;height: 100vh;transform: translate(0, 0);}
+    100%{width: 0;height: 0;transform: translate(-200vw, -200vh);}
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100% ;}
+}
+
+/* The typewriter cursor effect */
+@keyframes border-right {
+    0%{border-right: 0 solid white;}
+    1%{border-right: 5px solid white;}
+    99%{border-right: 5px solid white;}
+    100%{border-right: 0 solid white;}
+}
+@keyframes h-transform {
+    from{transform: translate(0vw, 0vh);}
+    to{transform: translate(0vw, 0vh);}
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+} 

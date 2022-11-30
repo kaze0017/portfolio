@@ -1,6 +1,8 @@
 /***** Navigation *****/
 .logo{height: 50px;width: 50px;}
+
 nav  .navbar-collapse{justify-content:flex-end}
+h1{width: 300px;}
 /***** Footee *****/
 footer .sociallink{text-align: right;}
 
