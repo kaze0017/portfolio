@@ -1,0 +1,42 @@
+:root{
+    --main-lo:0.5s;
+    --main-type-speed:0.5s;
+    --main-word-delay:2s;
+    --main-type-w1:calc(18*var(--main-type-speed));
+    --main-delay-w2:calc(var(--main-lo) + var(--main-type-w1) + var(--main-word-delay));
+    --main-delay-w3:calc(var(--main-delay-w2) + 3 * var(--main-type-speed) + var(--main-word-delay));
+} 
+
+
+path{fill:ivory;opacity: 0.5;}
+#F{animation: kyck var(--main-type-speed) var(--main-lo) 1;}
+#U{animation: kyck var(--main-type-speed) calc(var(--main-type-speed) + var(--main-lo)) 1;}
+#L{animation: kyck var(--main-type-speed) calc(2 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(3 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(13 * var(--main-type-speed) + var(--main-lo)) 1;}
+#S{animation: kyck var(--main-type-speed) calc(4 * var(--main-type-speed) + var(--main-lo)) 1, kyck2 var(--main-type-speed) var(--main-delay-w2) 1;}
+#T{animation: kyck var(--main-type-speed) calc(5 * var(--main-type-speed) + var(--main-lo)) 1;}
+#A{animation: kyck var(--main-type-speed) calc(6 * var(--main-type-speed) + var(--main-lo)) 1, kyck3 var(--main-type-speed) calc( 2 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
+#C{animation: kyck var(--main-type-speed) calc(7 * var(--main-type-speed) + var(--main-lo)) 1, kyck3 var(--main-type-speed) calc(6*var(--main-type-speed) + var(--main-delay-w3)) 1;}
+#K{animation: kyck var(--main-type-speed) calc(8 * var(--main-type-speed) + var(--main-lo)) 1;}
+#D{animation: kyck var(--main-type-speed) calc(9 * var(--main-type-speed) + var(--main-lo)) 1;}
+#E{animation: kyck var(--main-type-speed) calc(10 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(12 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(16 * var(--main-type-speed) + var(--main-lo)) 1, kyck2 var(--main-type-speed) calc(var(--main-type-speed) + var(--main-delay-w2)) 1;}
+#V{animation: kyck var(--main-type-speed) calc(11 * var(--main-type-speed) + var(--main-lo)) 1;}
+#O{animation: kyck var(--main-type-speed) calc(14 *var(--main-type-speed) + var(--main-lo)) 1, kyck2 var(--main-type-speed) calc(2 * var(--main-type-speed) + var(--main-delay-w2)) 1;}
+#P{animation: kyck var(--main-type-speed) calc(15 * var(--main-type-speed) + var(--main-lo)) 1, kyck3 var(--main-type-speed) calc(3 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
+#R{animation: kyck var(--main-type-speed) calc(17 * var(--main-type-speed) + var(--main-lo)) 1, kyck3 var(--main-type-speed) calc(1 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
+
+#G{animation: kyck3 var(--main-type-speed) var(--main-delay-w3) 1;}
+#H{animation: kyck3 var(--main-type-speed) calc( 4 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
+#I{animation: kyck3 var(--main-type-speed) calc( 5 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
+
+@keyframes kyck {
+    from-to{fill:ivory;opacity: 0.5;}
+    50%{fill:rgb(242, 182, 250);opacity: 1;}   
+}
+@keyframes kyck2 {
+    from{fill:ivory;opacity: 0.2;}
+    to{fill:rgb(194, 243, 141);opacity: 1;}
+}
+@keyframes kyck3 {
+    from-to{fill:ivory;opacity: 0.5;}
+    50%{fill:#80e0f0;opacity: 1;}   
+}
