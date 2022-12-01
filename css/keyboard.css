@@ -1,11 +1,11 @@
 :root{
-    --main-lo:0.5s;
+    --main-lo:5s;
     --main-type-speed:0.5s;
-    --main-word-delay:2s;
+    --main-word-delay:1s;
     --main-type-w1:calc(18*var(--main-type-speed));
     --main-delay-w2:calc(var(--main-lo) + var(--main-type-w1) + var(--main-word-delay));
     --main-delay-w3:calc(var(--main-delay-w2) + 3 * var(--main-type-speed) + var(--main-word-delay));
-} 
+}
 
 
 path{fill:ivory;opacity: 0.5;}
