@@ -1,6 +1,7 @@
 i{  text-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 5px gray, 0 0 5px gray;}
 .sociallink{font-size: 2em;}
 .services div>div>div{border: 2px solid red;}
+
 #web_subservices,#graphic_subservices{display: none;opacity: 0;}
 #services_graphic,#services_web{
     transition: min-width 1s;min-width:20%;min-height: 300px;}
@@ -13,7 +14,7 @@ i{  text-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 5px gray, 0 0 5px gray;}
     to{opacity: 1;}   
 }
 
-
+.projects div>div>div{border: 2px solid red;}
 
 
 
