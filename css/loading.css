@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     z-index: 1; 
-    animation: 5s 1 load_loading;
+    animation: 0.1s 1 load_loading;
 }
 .loading h1{ 
     padding-right: 10px;
