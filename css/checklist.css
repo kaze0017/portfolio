@@ -1,8 +1,9 @@
 #check_x5F_list{width: 300px; height: 500px;}
 .st0{fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;}
-.st1{fill:none;stroke:#23B320;stroke-width:3;stroke-miterlimit:10;
-     opacity:0; animation: check_mark 1s 1 6s forwards;}
+.st1,.st2{fill:none;stroke:#23B320;stroke-width:3;stroke-miterlimit:10;}
+.st1{opacity:0; animation: check_mark 10s infinite ;}
 
+#Board{fill:none;}
 #texts{fill:#ffffff;}
 
 #check_x5F_1{animation-delay: 0s;}
@@ -13,6 +14,8 @@
 #check_x5F_6{animation-delay: 5s;}
 
 @keyframes check_mark {
-    from{opacity: 0;}
-    to{opacity: 1;}
+    0%{opacity: 0;}
+    5%{opacity: 1;}
+    95%{opacity: 1;}
+    100%{opacity: 0;}
 }

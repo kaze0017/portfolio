@@ -1,3 +1,7 @@
+:root{
+    --main-load-du:0.5s;
+}
+main{transform: calc(translate(0vw, 0vh) - 1s); animation: hide_main var(--main-load-du) 1;}
 .loading{
     position: absolute;
     height:100vh; 
@@ -5,7 +9,7 @@
     display: flex;
     justify-content: center;
     z-index: 1; 
-    animation: 6s 1 load_loading;
+    animation: var(--main-load-du) 1 load_loading;
 }
 .loading h1{ 
     padding-right: 10px;
@@ -26,6 +30,11 @@
     white-space: nowrap;}
 
 /**** Animations*****/
+@keyframes hide_main{
+    from-to{transform: translate(0vw, 0vh);}
+    1%{transform: translate(-200vw, -200vh);}
+    99%{transform: translate(-200vw, -200vh);}
+}
 @keyframes load_loading{
     0%{width: 100vw;height: 100vh;transform: translate(0, 0);}
     99%{width: 100vw;height: 100vh;transform: translate(0, 0);}

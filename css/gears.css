@@ -1,18 +1,18 @@
 #gear1{
-    fill: #80e0f0;;
+    fill: rgb(132,157,204);
     animation: rotate_gear_ccw 5s linear infinite;
-	transform-origin:  327.1px 181.75px;
+	transform-origin:  227.1px 142.7px;
 }
 #gear2{
-    fill: rgb(194, 243, 141);
+    fill: #ff9900;
     animation: rotate_gear_ccw 7s linear infinite;
-	transform-origin:  203.8px 131.6px;
+	transform-origin:  84.8px 99.6px;
 }
 	
 #gear3{
-    fill: rgb(221, 135, 238);
+    fill:rgba(56,154,66,1);
     animation: rotate_gear_cw 10s linear infinite;
-	transform-origin:  236.55px 329.5px;
+	transform-origin:  136.55px 291.5px;
 }
 @keyframes rotate_gear_cw {
     from{transform: rotate(0deg);}
