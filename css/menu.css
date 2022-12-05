@@ -6,3 +6,5 @@ nav  .navbar-collapse{justify-content:flex-end}
 /***** Footer *****/
 footer .sociallink{text-align: right;}
 
+i{  text-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 5px gray, 0 0 5px gray;}
+.sociallink{font-size: 2em;}

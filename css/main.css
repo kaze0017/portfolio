@@ -1,57 +1,70 @@
-i{  text-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 5px gray, 0 0 5px gray;}
-.sociallink{font-size: 2em;}
+.section_slice{transition: min-width 1s;min-width:20%;min-height: 300px;padding-left:0; padding-right: 0;}
+.section_slice:hover {min-width: 80%;}
+.slice_containter h2{display: inline; }
+
+.slice_container{display: none;opacity: 0;}
+.section_slice:hover .slice_container{display: flex;animation: subservices 1.5s 1s 1 forwards;}
 
 
-#web_subservices,#graphic_subservices{display: none;opacity: 0;}
-#services_graphic,#services_web{transition: min-width 1s;min-width:20%;min-height: 300px;padding-left:0; padding-right: 0;}
-#services_graphic h2,#services_web h2{display: inline; }
-#services_graphic:hover,#services_web:hover {min-width: 80%;}
-#services_web:hover #web_subservices, #services_graphic:hover #graphic_subservices{display: flex;animation: subservices 1.5s 1s 1 forwards;}
-
-#web_projects,#media_projects{display: none;opacity: 0;}
-#projects_web, #projects_media{transition: min-width 1s;min-width:20%;min-height: 300px;padding-left:0; padding-right: 0;}
-#projects_media h2,#projects_web h2{display: inline; }
-#projects_web:hover, #projects_media:hover {min-width: 80%;}
-#projects_web:hover #web_projects, #projects_media:hover #media_projects{display: flex;animation: subservices 1.5s 1s 1 forwards;}
 
 @keyframes subservices {
     from{opacity: 0;}
     to{opacity: 1;}   
 }
 
-.projects div>div>div{border: 2px solid red;}
-
 .charackter ul {list-style-type: none;}
 
 #services_web{ background-image: url('../images/services_web_bg.jpg'); background-size:cover;}
-#services_graphic{ background-image: url('../images/services_media_bg.jpg'); background-size:cover;}
+#services_media{ background-image: url('../images/services_media_bg.jpg'); background-size:cover;}
+
+
+
+
+.section_slice h2{
+    color: black;
+    padding:0 10px;
+    background: linear-gradient(90deg,rgba(255,255,255,0.01) , rgba(255,255,255,0.7) 20%,  rgba(255,255,255,0.8) 80%,rgba(255,255,255,0.01));
+    backdrop-filter: blur(20x);
+    -webkit-backdrop-filter: blur(20x);
+
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.card_transparent{
+    color: black;
+    padding:0 10px;
+    background: linear-gradient(135deg,  rgba(255,255,255,1)  ,rgba(255,255,255,0.01));
+    backdrop-filter: blur(10x);
+    -webkit-backdrop-filter: blur(10x);
+
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+/********************** Projects *****************************/
+:root{
+    --main-slides-duration:20s;
+    --main-slide-duration:calc(var(var(--main-slides-duration) * 2 / 9));
+    --main-slide-tranition:calc(var(var(--main-slides-duration) * 1 / 36));
+    --main-slide-delay:calc(var(--main-slides-duration) / 4)
+}
 #projects_web{ background-image: url('../images/projrcts_web_bg.jpg'); background-size:cover;}
 #projects_media{ background-image: url('../images/projects_media_bg.jpg'); background-size:cover;}
 
-#services_web h2, #services_graphic h2{
-    color: black;
-    padding:0 10px;
-    background: linear-gradient(90deg,rgba(255,255,255,0.01) , rgba(255,255,255,0.7) 20%,  rgba(255,255,255,0.8) 80%,rgba(255,255,255,0.01));
-    backdrop-filter: blur(20x);
-    -webkit-backdrop-filter: blur(20x);
+.projects .section_slice{opacity: 1;}
+.slides{
+    position: relative; border: 2px red solid;  display: flex; overflow: hidden; white-space: nowrap;height: 75vh;width: 500px;} 
+.slide_img img{width:100%; height: 55vh;}
+.slide{position: absolute; transform: translate(-100vw, 0); animation: swiping_slide var(--main-slides-duration) infinite;}
+.slide_2{animation-delay:  calc(1 * var(--main-slide-delay));}
+.slide_3{animation-delay:  calc(2 * var(--main-slide-delay));}
+.slide_4{animation-delay:  calc(3 * var(--main-slide-delay));}
 
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+@keyframes swiping_slide {
+    0%{transform: translate(-100vw, 0);}
+    2.77%{transform: translate(0, 0);}
+    25%{transform: translate(0, 0);}
+    27.77%{transform: translate(100vw, 0);}
+    100%{transform: translate(100vw, 0);}
 }
-#projects_web h2, #projects_media h2{
-    color: black;
-    padding:0 10px;
-    background: linear-gradient(90deg,rgba(255,255,255,0.01) , rgba(255,255,255,0.7) 20%,  rgba(255,255,255,0.8) 80%,rgba(255,255,255,0.01));
-    backdrop-filter: blur(20x);
-    -webkit-backdrop-filter: blur(20x);
 
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
-}
-.card_transparent{
-    background: linear-gradient(90deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
-    backdrop-filter: blur(20x);
-    -webkit-backdrop-filter: blur(20x);
-    border-radius: 20px;
-    border: 1px solid  rgba(255,255,255,0.2);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
-}
+
 
