@@ -5,7 +5,17 @@
     --main-type-w1:calc(18*var(--main-type-speed));
     --main-delay-w2:calc(var(--main-lo) + var(--main-type-w1) + var(--main-word-delay));
     --main-delay-w3:calc(var(--main-delay-w2) + 3 * var(--main-type-speed) + var(--main-word-delay));
+
+    --main-color-purple:#A074C4;
+    --main-color-blue-d:#519ABA;
+    --main-color-orange:#D14E28;
+    --main-color-green_1:#6A9955;
+    --main-color-green_2:#16825D;
+    --main-color-green_3:#487E02;
+    --main-color-yellow:#CBBD2D;
 }
+
+
 
 #h-f{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) var(--main-lo) 1 forwards;}
 #h-u{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(var(--main-type-speed) + var(--main-lo)) 1 forwards;}
@@ -38,17 +48,38 @@
 #GRA-I{fill:ivory;opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(5 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
 #GRA-C{fill:ivory;opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(6 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
 
+/********************** KeyBoard **********************/
+path{fill:ivory;opacity: 0.5;}
+#F{animation: kyck var(--main-type-speed) var(--main-lo) 1;}
+#U{animation: kyck var(--main-type-speed) calc(var(--main-type-speed) + var(--main-lo)) 1;}
+#L{animation: kyck var(--main-type-speed) calc(2 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(3 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(13 * var(--main-type-speed) + var(--main-lo)) 1;}
+#S{animation: kyck var(--main-type-speed) calc(4 * var(--main-type-speed) + var(--main-lo)) 1, kyck2 var(--main-type-speed) var(--main-delay-w2) 1;}
+#T{animation: kyck var(--main-type-speed) calc(5 * var(--main-type-speed) + var(--main-lo)) 1;}
+#A{animation: kyck var(--main-type-speed) calc(6 * var(--main-type-speed) + var(--main-lo)) 1, kyck3 var(--main-type-speed) calc( 2 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
+#C{animation: kyck var(--main-type-speed) calc(7 * var(--main-type-speed) + var(--main-lo)) 1, kyck3 var(--main-type-speed) calc(6*var(--main-type-speed) + var(--main-delay-w3)) 1;}
+#K{animation: kyck var(--main-type-speed) calc(8 * var(--main-type-speed) + var(--main-lo)) 1;}
+#D{animation: kyck var(--main-type-speed) calc(9 * var(--main-type-speed) + var(--main-lo)) 1;}
+#E{animation: kyck var(--main-type-speed) calc(10 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(12 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(16 * var(--main-type-speed) + var(--main-lo)) 1, kyck2 var(--main-type-speed) calc(var(--main-type-speed) + var(--main-delay-w2)) 1;}
+#V{animation: kyck var(--main-type-speed) calc(11 * var(--main-type-speed) + var(--main-lo)) 1;}
+#O{animation: kyck var(--main-type-speed) calc(14 *var(--main-type-speed) + var(--main-lo)) 1, kyck2 var(--main-type-speed) calc(2 * var(--main-type-speed) + var(--main-delay-w2)) 1;}
+#P{animation: kyck var(--main-type-speed) calc(15 * var(--main-type-speed) + var(--main-lo)) 1, kyck3 var(--main-type-speed) calc(3 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
+#R{animation: kyck var(--main-type-speed) calc(17 * var(--main-type-speed) + var(--main-lo)) 1, kyck3 var(--main-type-speed) calc(1 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
+
+#G{animation: kyck3 var(--main-type-speed) var(--main-delay-w3) 1;}
+#H{animation: kyck3 var(--main-type-speed) calc( 4 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
+#I{animation: kyck3 var(--main-type-speed) calc( 5 * var(--main-type-speed) + var(--main-delay-w3)) 1;}
 
 
+/********************* Animations *********************/
 @keyframes kyck {
-    from{fill:rgb(221, 135, 238);opacity: 0.2;}
-    to{fill:rgb(221, 135, 238);opacity: 1;}
+    from{fill:ivory;opacity: 0.5;}
+    to{fill:var(--main-color-purple);opacity: 1;}   
 }
 @keyframes kyck2 {
-    from{fill:rgb(194, 243, 141);opacity: 0.2;}
-    to{fill:rgb(194, 243, 141);opacity: 1;}
+    from{fill:ivory;opacity: 0.2;}
+    to{fill:var(--main-color-green_1);opacity: 1;}
 }
 @keyframes kyck3 {
-    from{fill:#80e0f0;opacity: 0.2;}
-    to{fill:#80e0f0;opacity: 1;}
+    from{fill:ivory;opacity: 0.5;}
+    to{fill:var(--main-color-blue-d);opacity: 1;}   
 }

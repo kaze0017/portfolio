@@ -1,0 +1,43 @@
+:root{
+    --main-lo:5s;
+    --main-type-speed:0.5s;
+    --main-word-delay:1s;
+    --main-type-w1:calc(18*var(--main-type-speed));
+    --main-delay-w2:calc(var(--main-lo) + var(--main-type-w1) + var(--main-word-delay));
+    --main-delay-w3:calc(var(--main-delay-w2) + 3 * var(--main-type-speed) + var(--main-word-delay));
+
+    --main-color-purple:#A074C4;
+    --main-color-blue-d:#519ABA;
+    --main-color-orange:#D14E28;
+    --main-color-green_1:#6A9955;
+    --main-color-green_2:#16825D;
+    --main-color-green_3:#487E02;
+    --main-color-yellow:#CBBD2D;
+}
+
+
+
+#Codes #html{fill: var(--main-color-orange);}
+#Codes #css{fill: var(--main-color-blue-d);}
+#Codes #php{fill: var(--main-color-purple);}
+#Codes #javascript{fill: var(--main-color-yellow);}
+
+
+#cms #mangu{fill:var(--main-color-orange)}
+#cms #shopify{fill:var(--main-color-green_2)}
+#cms #wordpress{fill:var(--main-color-blue-d)}
+#cms #drupal{fill:var(--main-color-blue-d)}
+
+
+#svg-seo .st0{fill:var(--main-color-blue-d);}
+#svg-seo .st1{fill:var(--main-color-purple);}
+#svg-seo .st2{fill:var(--main-color-green_2);}
+
+#video_graphy #video_camera{fill: var(--main-color-purple);}
+#video_graphy #adobe_pre{fill:var(--main-color-orange)}
+
+#photo_graphy #photo_camera{fill: var(--main-color-green_2);}
+#photo_graphy #adobe_light{fill:var(--main-color-orange)}
+
+#graphic_adobe #adobe_photoshop{fill: var(--main-color-orange);}
+#graphic_adobe #adobe_illustrator{fill: var(--main-color-blue-d);}

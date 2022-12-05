@@ -3,7 +3,7 @@
 <svg version="1.1" id="check_x5F_list" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 246 377" style="enable-background:new 0 0 246 377;" xml:space="preserve">
 <style type="text/css">
-	@import url(../css/checklist.css);
+	@import url(../css/checklist_gears.css);
 </style>
 <path id="Board" class="st0" d="M238,44v323.4H12.9V44H238z M181.5,38.8v24.4h-112V38.8c0-5.7,4.6-10.3,10.3-10.3h21.1
 	c-0.2-1-0.3-1.9-0.3-2.9c0-10.2,11.1-18.4,24.9-18.4c13.7,0,24.9,8.2,24.9,18.4c0,1-0.1,2-0.3,2.9h21.1
