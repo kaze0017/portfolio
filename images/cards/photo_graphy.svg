@@ -3,7 +3,7 @@
 <svg version="1.1" id="photo_graphy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
-	@import url(../css/cardicon.css);
+	@import url(../../css/cardicon.css);
 </style>
 <path id="adobe_light" d="M191.2,188.6c-34.2,0-68.3,0-102.5,0c0-33.4,0-66.7,0-100.1c34.2,0,68.3,0,102.5,0
 	C191.2,121.9,191.2,155.3,191.2,188.6z M124.2,150.6c0-0.7,0-1.2,0-1.7c0-11.1,0-22.2,0-33.2c0-1.1-0.3-1.4-1.4-1.4
