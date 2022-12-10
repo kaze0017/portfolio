@@ -8,48 +8,54 @@
 
     --main-color-purple:#A074C4;
     --main-color-blue-d:#519ABA;
+    --maincolor-blue-b:#569CD6;
     --main-color-orange:#D14E28;
     --main-color-green_1:#6A9955;
     --main-color-green_2:#16825D;
     --main-color-green_3:#487E02;
     --main-color-yellow:#CBBD2D;
+    --main-color-w5b0: #F0F0F0;
+    --main-color-w4b1:#CCCCCC;
+    --main-color-w3b2:#333333;
+    --main-color-w2b3:#252526;
+    --main-color-w1b4:#1E1E1E;
 }
 
 
 
-#h-f{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) var(--main-lo) 1 forwards;}
-#h-u{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-l-1{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(2*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-l-2{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(3*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-l-3{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(13*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-s{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(4*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-t{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(5*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-a{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(6*var(--main-type-speed) + var(--main-lo)) 1 forwards ;}
-#h-c{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(7*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-k{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(8*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-d{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(9*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-e-1{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(10*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-e-2{fill:ivory;opacity: 0.5;animation:kyck var(--main-type-speed) calc(12*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-e-3{fill:ivory;opacity: 0.5;animation:kyck var(--main-type-speed) calc(16*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-v{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(11*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-o{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(14*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-p{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(15*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
-#h-r{fill:ivory;opacity: 0.5;animation: kyck var(--main-type-speed) calc(17*var(--main-type-speed) + var(--main-lo)) 1 forwards ;}
+#h-f{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) var(--main-lo) 1 forwards;}
+#h-u{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-l-1{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(2*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-l-2{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(3*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-l-3{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(13*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-s{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(4*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-t{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(5*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-a{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(6*var(--main-type-speed) + var(--main-lo)) 1 forwards ;}
+#h-c{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(7*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-k{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(8*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-d{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(9*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-e-1{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(10*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-e-2{fill:var(--main-color-w5b0);opacity: 0.5;animation:kyck var(--main-type-speed) calc(12*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-e-3{fill:var(--main-color-w5b0);opacity: 0.5;animation:kyck var(--main-type-speed) calc(16*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-v{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(11*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-o{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(14*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-p{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(15*var(--main-type-speed) + var(--main-lo)) 1 forwards;}
+#h-r{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck var(--main-type-speed) calc(17*var(--main-type-speed) + var(--main-lo)) 1 forwards ;}
 
-#SEO-S{fill:ivory;opacity: 0.5;animation: kyck2 var(--main-type-speed) calc(var(--main-delay-w2)) 1 forwards;}
-#SEO-E{fill:ivory;opacity: 0.5;animation: kyck2 var(--main-type-speed) calc(1 * var(--main-type-speed) + var(--main-delay-w2)) 1 forwards;}
-#SEO-O{fill:ivory;opacity: 0.5;animation: kyck2 var(--main-type-speed) calc(2 * var(--main-type-speed) + var(--main-delay-w2)) 1 forwards;}
+#SEO-S{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck2 var(--main-type-speed) calc(var(--main-delay-w2)) 1 forwards;}
+#SEO-E{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck2 var(--main-type-speed) calc(1 * var(--main-type-speed) + var(--main-delay-w2)) 1 forwards;}
+#SEO-O{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck2 var(--main-type-speed) calc(2 * var(--main-type-speed) + var(--main-delay-w2)) 1 forwards;}
 
-#GRA-G{fill:ivory;opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(var(--main-delay-w3)) 1 forwards;}
-#GRA-R{fill:ivory;opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(1 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
-#GRA-A{fill:ivory;opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(2 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
-#GRA-P{fill:ivory;opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(3 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
-#GRA-H{fill:ivory;opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(4 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
-#GRA-I{fill:ivory;opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(5 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
-#GRA-C{fill:ivory;opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(6 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
+#GRA-G{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(var(--main-delay-w3)) 1 forwards;}
+#GRA-R{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(1 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
+#GRA-A{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(2 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
+#GRA-P{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(3 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
+#GRA-H{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(4 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
+#GRA-I{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(5 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
+#GRA-C{fill:var(--main-color-w5b0);opacity: 0.5;animation: kyck3 var(--main-type-speed) calc(6 * var(--main-type-speed) + var(--main-delay-w3)) 1 forwards;}
 
 /********************** KeyBoard **********************/
-path{fill:ivory;opacity: 0.5;}
+path{fill:var(--main-color-w5b0);opacity: 0.5;}
 #F{animation: kyck var(--main-type-speed) var(--main-lo) 1;}
 #U{animation: kyck var(--main-type-speed) calc(var(--main-type-speed) + var(--main-lo)) 1;}
 #L{animation: kyck var(--main-type-speed) calc(2 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(3 * var(--main-type-speed) + var(--main-lo)) 1, kyck var(--main-type-speed) calc(13 * var(--main-type-speed) + var(--main-lo)) 1;}
@@ -72,14 +78,14 @@ path{fill:ivory;opacity: 0.5;}
 
 /********************* Animations *********************/
 @keyframes kyck {
-    from{fill:ivory;opacity: 0.5;}
+    from{fill:var(--main-color-w5b0);opacity: 0.5;}
     to{fill:var(--main-color-purple);opacity: 1;}   
 }
 @keyframes kyck2 {
-    from{fill:ivory;opacity: 0.2;}
+    from{fill:var(--main-color-w5b0);opacity: 0.5;}
     to{fill:var(--main-color-green_1);opacity: 1;}
 }
 @keyframes kyck3 {
-    from{fill:ivory;opacity: 0.5;}
+    from{fill:var(--main-color-w5b0);opacity: 0.5;}
     to{fill:var(--main-color-blue-d);opacity: 1;}   
 }

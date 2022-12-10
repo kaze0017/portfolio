@@ -5,27 +5,61 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous"> -->
-
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  </head>
+    <!-- FontAwesome Kit -->
+    <script src="https://kit.fontawesome.com/0ce3b99428.js" crossorigin="anonymous"></script>
+
+    <!-- Page Title-->
+    <title>Portfolio</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/settings.css">
-    <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Loading page animations CSS-->
     <link rel="stylesheet" href="./css/loading.css">
-    
-    <title>Portfolio</title>
+
+    <!-- FavIcon -->
     <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+
   </head>
   
-  <body class="text-light">
-    <div class="loading bg-dark text-light text-center" style="transform: translate(-200vw, -200vh);"><div class="d-flex flex-column  justify-content-center align-items-center"><h1>This is Keivan</h1><h2>Welcome to my Page.</h2></div></div>
-    <header id="nav-placeholder"></header>
+  <body class="text-white bg-body">
+
+    <!-- Loding screen - Partially inline styled to avoid displaying in the case of broken CSS-->
+    <div class="loading bg-dark text-light text-center" style="transform: translate(-200vw, -200vh);">
+      <div class="d-flex flex-column  justify-content-center align-items-center">
+        <h1>This is Keivan</h1>
+        <h2>Welcome to my Page.</h2>
+      </div>
+    </div>
+
+    <!-- Section one: Banner-->
+    <header class="bg-dark text-light">
+      <!-- Adds a hamburger menu from Bootstrap library-->
+      <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" itemscope itemtype="http://schema.org/Organization">
+          <a class="navbar-brand" href="index.html" itemprop="url" href="http://www.address.com/"><img class="logo" src="./images/logo.svg" alt="Logo" itemprop="logo"></a>
+          <button 
+            class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement" role="menu">
+              <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link active" aria-current="page" href="./index.html" title="Home">Home</a></li>
+              <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link" href="./pages/services.html" title="Services">Services</a></li>
+              <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link" href="./pages/projects.html" title="Services">Projects</a></li>
+              <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link" href="./pages/about.html" title="Services">About</a></li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+
+
+
+    <!-- The banner: includes a brief "about me" and SVGs with animation -->
     <section class="container">
       <div class="row container flex-row-reverse">
         <div class="col-lg-6">
@@ -36,100 +70,105 @@
           </div>
           <div><object  data="./images/header/keyboard.svg"></object></div>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-around align-items-center">
-          <div class="text-center"><img src="https://via.placeholder.com/150/150" alt="Keivan's portfolio"></div>
-          <div class="text-center"><h2>Keivan Kazemi</h2></div>
-          <div class="text-center charackter"><ul><li>Knowledgeable</li><li>Enthusiast Media Developer</li></ul></div>
-          <div class="text-center"><button>About Me</button></div>
+        <div class="col-lg-6 d-flex flex-column justify-content-around align-items-center" itemscope itemtype="https://schema.org/Person">
+          <div class="text-center"><img src="./images/keivan_2.png" class="portraite_image" alt="Keivan's portfolio" itemprop="image"></div>
+          <div class="text-center"><h2><span itemprop="givenName">Keivan</span> <span itemprop="familyName">Kazemi</span></h2></div>
+          <div class="text-center charackter"><ul><li>Creative</li><li>Knowledgeable</li><li>Enthusiast Media Developer</li></ul></div>
+          <div class="text-center"> <a href="./pages/about.html" class="btn btn-success">About Me</a></div>
         </div>
       </div>
     </section>
 
     <main>
 
-      <section class="section_row services container mt-5">
-        <div class="row">
+      <section class="section_row services container mt-5" itemscope itemtype="https://schema.org/Service">
+        <div class="row bg-dark">
           <div class="col-lg-4 row">
-            <div class="col-lg-6"><h2>Services</h2><object data="./images/sections/Gears.svg"></object></div>
-            <div class="col-lg-6"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsam eius aliquid asperiores eos impedit officia dolore illo architecto ex, ullam nobis vel hic. Harum, ipsum, </p></div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center"><h2>Services</h2><object data="./images/sections/Gears.svg"></object></div>
+            <div class="col-lg-6 my-auto"><p> Advanced skills in a variety of services and techniques which are essential for creating an attractive and dynamic website or media project. These services include different coding languages, CMS platforms, videography, photography, and graphic designs using adobe creative suite.</p>
+            </div>
           </div>
           <div class="sliced_section col-lg-8 container d-lg-flex flex-row" >
             
             <div id="services_web" class="section_slice flex-fill d-flex flex-column justify-content-around align-items-center py-2 container">
-              <h2 >Web</h2>
-              <div id="web_services" class="slice_container row m-0">
+              <h2 ><span itemprop="category" title="web development">Web</span></h2>
+              <div id="web_services" class="slice_container container m-0">
 
-                <div class=" col-lg-4">
-                  <div class="card_transparent text-dark">
-                    <div class="card_image"><object  data="./images/cards/codes.svg"></object></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Hard Code</h5>
-                      <p class="card-text">This card has supporting text below as a </p>
-                      <p class="card-text"><small class="text-muted">More...</small></p>
+                <div class="row">
+                  <div class=" col-sm-4">
+                    <div class="card_transparent text-dark">
+                      <div class="card_image "><object  data="./images/cards/codes.svg"></object></div>
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><span itemprop="name" title="Custom Website Using HTML and CSS">Custom Website</span></h5>
+                        <p class="card-text">Using HTML, CSS, JavaScript, and PHP to create a fully customized website</p>
+                        <p class="card-text"><small class="text-muted"><a href="./pages/services.html#panel1v">More...</a></small></p>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col-lg-4">
-                  <div class="card_transparent text-dark">
-                    <div class="card_image"><object  data="./images/cards/cms.svg"></object></div>
-                    <div class="card-body">
-                      <h5 class="card-title">CMS</h5>
-                      <p class="card-text">This card has supporting text below as a </p>
-                      <p class="card-text"><small class="text-muted">More...</small></p>
+  
+                  <div class="col-sm-4">
+                    <div class="card_transparent text-dark">
+                      <div class="card_image"><object  data="./images/cards/cms.svg"></object></div>
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><span itemprop="name" title="creating CMS based website">CMS</span></h5>
+                        <p class="card-text">Creating dynamic websites using the dominant CMS platforms.</p>
+                        <p class="card-text"><small class="text-muted"><a href="./pages/services.html#panel2v">More...</a></small></p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="card_transparent text-dark">
-                    <div class="card_image"><object  data="./images/cards/seo_card.svg"></object></div>
-                    <div class="card-body">
-                      <h5 class="card-title">SEO</h5>
-                      <p class="card-text">This card has supporting text below as a </p>
-                      <p class="card-text"><small class="text-muted">More...</small></p>
+                  <div class="col-sm-4">
+                    <div class="card_transparent text-dark">
+                      <div class="card_image"><object  data="./images/cards/seo_card.svg"></object></div>
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><span itemprop="name" title="search engin Optimization">SEO</span></h5>
+                        <p class="card-text">Optimizing websites for higher rank in the result of search engines. </p>
+                        <p class="card-text"><small class="text-muted"><a href="./pages/services.html#panel3v">More...</a></small></p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div><button>Let's Go</button></div>
+              <div class="text-center"><a href="./pages/services.html"  class="btn btn-success">Let's Go</a></div>
             </div>
             <div id="services_media" class="section_slice flex-fill d-flex flex-column justify-content-around align-items-center py-2 container">
-              <h2 >Media</h2>
-              <div id="graphic_services" class="slice_container row m-0">
+              <h2><span itemprop="category">Media</span> </h2>
+              <div id="graphic_services" class="slice_container container m-0">
 
-                <div class=" col-lg-4">
-                  <div class="card_transparent text-dark">
-                    <div class="card_image"><object  data="./images/cards/video_graphy.svg"></object></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Videography</h5>
-                      <p class="card-text">This card has supporting text below as a </p>
-                      <p class="card-text"><small class="text-muted">More...</small></p>
+                <div class="row">
+                  <div class=" col-sm-4">
+                    <div class="card_transparent text-dark">
+                      <div class="card_image"><object  data="./images/cards/video_graphy.svg"></object></div>
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><span itemprop="name">Videography</span></h5>
+                        <p class="card-text">Making attractive and appealing interviews, short videos, and vlogs. </p>
+                        <p class="card-text"><small class="text-muted"><a href="./pages/services.html#panel4v">More...</a></small></p>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col-lg-4">
-                  <div class="card_transparent text-dark">
-                    <div class="card_image"><object  data="./images/cards/photo_graphy.svg"></object></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Photography</h5>
-                      <p class="card-text">This card has supporting text below as a </p>
-                      <p class="card-text"><small class="text-muted">More...</small></p>
+  
+                  <div class="col-sm-4">
+                    <div class="card_transparent text-dark">
+                      <div class="card_image"><object  data="./images/cards/photo_graphy.svg"></object></div>
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><span itemprop="name">Photography</span></h5>
+                        <p class="card-text">Portfolios, commercial photography of products, and locations. </p>
+                        <p class="card-text"><small class="text-muted"><a href="./pages/services.html#panel5v">More...</a></small></p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="card_transparent text-dark">
-                    <div class="card_image"><object  data="./images/cards/graphic_adobe.svg"></object></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Graphic</h5>
-                      <p class="card-text">This card has supporting text below as a </p>
-                      <p class="card-text"><small class="text-muted">More...</small></p>
+                  <div class="col-sm-4">
+                    <div class="card_transparent text-dark">
+                      <div class="card_image"><object  data="./images/cards/graphic_adobe.svg"></object></div>
+                      <div class="card-body text-center">
+                        <h5 class="card-title"> <span itemprop="name">Graphic</span></h5>
+                        <p class="card-text">Editing and creating content for different purposes and designing logos.</p>
+                        <p class="card-text"><small class="text-muted"><a href="./pages/services.html#panel6v">More...</a></small></p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div><button>Let's Go</button></div>
+              <div class="text-center"><a href="./pages/services.html" class="btn btn-success">Let's Go</a></div>
             </div>
           </div>
         </div>
@@ -137,73 +176,53 @@
 
       <!-- Section: Projects -->
       <section class="projects container mt-5">
-        <div class="row">
+        <div class="row bg-dark">
           <div class="col-lg-4 row">
-            <div class="col-lg-6"><h2>Projects</h2><object data="./images/sections/check_list.svg"></object></div>
-            <div class="col-lg-6"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsam eius aliquid asperiores eos impedit officia dolore illo architecto ex, ullam nobis vel hic. Harum, ipsum, </p></div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center"><h2>Projects</h2><object data="./images/sections/check_list.svg"></object></div>
+            <div class="col-lg-6 my-auto"><p>I have done many projects with different purposes using different methods. These projects include websites, interviews, portfolios, posters and many other. They are all with high standards, according to the purpose of the project. Here is a collection of selected ones. </p></div>
           </div>
           <div class=" col-lg-8 container d-lg-flex flex-row  flex-fill" >
             
-            <div id="projects_web" class="section_slice flex-fill d-flex flex-column justify-content-around align-items-center py-2 container">
+            <div id="projects_web" class="section_slice flex-fill d-flex flex-column justify-content-around align-items-center py-2 container ">
               <h2 >Web</h2>
-              <div id="web_projects" class="slice_container row m-0">
+              <div id="web_projects" class="slice_container">
 
-                <div class="slides">
-                  <div class="slide slide_1">
-                    <div class="slide_img"><img src="./images/slideshows/campaign.jpg" alt=""></div>
-                    <div><h3>Campaign</h3></div>
-                    <div><p>A Drupal Projecr</p></div>
-                    <div><a href="#">Check it out</a></div>
-                  </div>
-                  <div class="slide slide_2">
-                    <div class="slide_img"><img src="./images/slideshows/shopify.jpg" alt=""></div>
-                    <div><h3>Campaign</h3></div>
-                    <div><p>A Drupal Projecr</p></div>
-                    <div><a href="#">Check it out</a></div>
-                  </div>
-                  <div class="slide slide_3">
-                    <div class="slide_img"><img src="./images/slideshows/keivanart.jpg" alt=""></div>
-                    <div><h3>Campaign</h3></div>
-                    <div><p>A Drupal Projecr</p></div>
-                    <div><a href="#">Check it out</a></div>
-                  </div>
-                  <div class="slide slide_4"><div class="slide_img"><img src="./images/" alt=""></div></div>
+                <div class="project_slides">
+
+
+                  <div class="c_slideshow">
+                    <div><img class="slide_img slide_1" src="./images/projects/wheatscent/home_o.jpg" alt=""></div>
+                    <img class="slide_img slide_2" src="./images/projects/keivanArt/home-1-o.jpg" alt="">
+                    <img class="slide_img slide_3" src="./images/projects/portfolio/home-o-jpg" alt="">
+                    <img class="slide_img slide_4" src="./images/projects/keivanimd/home-1-o.jpg" alt="">
+                  </div> 
+
+
+
                 </div>
-
-              </div>
-              <div><button>Let's Go</button></div>
+              </div> 
+              <div class="text-center"><a href="./pages/projects.html" class="btn btn-success">Let's Go</a></div>
             </div>
 
 
             <div id="projects_media" class="section_slice flex-fill d-flex flex-column justify-content-around align-items-center py-2 container">
               <h2 >Media</h2>
-              <div id="media_projects" class="slice_container row m-0">
+              <div id="media_projects" class="slice_container">
+                <div class="project_slides">
 
-                <div class="slides ">
-                  <div class="slide slide_1">
-                    <div class="slide_img"><img src="./images/campaign.jpg" alt=""></div>
-                    <div><h3>Campaign</h3></div>
-                    <div><p>A Drupal Projecr</p></div>
-                    <div><a href="#">Check it out</a></div>
-                  </div>
-                  <div class="slide slide_2">
-                    <div class="slide_img"><img src="./images/shopify.jpg" alt=""></div>
-                    <div><h3>Campaign</h3></div>
-                    <div><p>A Drupal Projecr</p></div>
-                    <div><a href="#">Check it out</a></div>
-                  </div>
-                  <div class="slide slide_3">
-                    <div class="slide_img"><img src="./images/keivanart.jpg" alt=""></div>
-                    <div><h3>Campaign</h3></div>
-                    <div><p>A Drupal Projecr</p></div>
-                    <div><a href="#">Check it out</a></div>
-                  </div>
-                  <div class="slide slide_4"><div class="slide_img"><img src="./images/" alt=""></div></div>
+                  <div class="c_slideshow">
+                    <div><img class="slide_img slide_1" src="./images/projects/media/interview-o.jpg" alt=""></div>
+                    <img class="slide_img slide_2" src="./images/projects/media/poster-o.jpg" alt="">
+                    <img class="slide_img slide_3" src="./images/projects/media/story-o.jpg" alt="">
+                    <img class="slide_img slide_4" src="./images/projects/media/avatars-o.jpg" alt="">
+                  </div> 
+
                 </div>
-
-              </div>
-              <div><button>Let's Go</button></div>
+              </div> 
+              <div class="text-center"><a href="./pages/projects.html" class="btn btn-success">Let's Go</a></div>
             </div>
+
+          </div>
         </div>
       </section>
     </main>
@@ -212,12 +231,12 @@
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script> -->
 
-    <!-- Scripts to replate nav/footer-placeholder with contents -->
+    <!-- Scripts to replate footer-placeholder with contents -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-    <script>$.get("./pages/menu_navigation.html", function(data){ $("#nav-placeholder").replaceWith(data);});</script>
     <script>$.get("./pages/menu_footer.html", function(data){ $("#footer-placeholder").replaceWith(data);});</script>
     <!--Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script>$('.carousel').carousel('cycle')</script>
 

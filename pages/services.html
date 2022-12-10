@@ -4,33 +4,69 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
 
-    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Foundation CSS-->
     <link rel="stylesheet" href="../foundation/css/foundation.css">
     <link rel="stylesheet" href="../foundation/css/app.css">
 
+    <!-- FontAwesome Kit -->
+    <script src="https://kit.fontawesome.com/0ce3b99428.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Page Title-->
+    <title>Portfolio</title>
 
-
-
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/menu.css">
+    <!-- The customized CSS for foundation is located at ../foundation/css/app.css and injected by script-->
+
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+
+
+
+
 
   </head>
-<body>
-  
-  <header id="nav-placeholder"></header>
+<body class="bg-body text-white">
 
+
+  <!-- Navigation: Main Menu-->
+  <header class="bg-dark text-light">
+
+ <!-- Adds a hamburger menu from Bootstrap library-->
+ <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" itemscope itemtype="http://schema.org/Organization">
+  <a class="navbar-brand" href="index.html" itemprop="url" href="http://www.address.com/"><img class="logo" src="../images/logo.svg" alt="Logo" itemprop="logo"></a>
+  <button 
+    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav  mb-2 mb-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement" role="menu">
+      <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link"  href="../index.html" title="Home">Home</a></li>
+      <li class="nav-item" itemprop="name" role="menuitem"><a  class="nav-link active" aria-current="page" href="./services.html" title="Services">Services</a></li>
+      <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link" href="./projects.html" title="Services">Projects</a></li>
+      <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link" href="./about.html" title="Services">About</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
 
 <main>
+ 
+  <!-- Section one: Tabs-->
   <div class="grid-container mt-4">
     <div class="grid-x">
+
+      <!-- Tabs Menu-->
       <div class="cell medium-3">
         <ul class="vertical tabs" data-tabs id="example-tabs">
           <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Custom Websites</a></li>
@@ -42,12 +78,12 @@
         </ul>
       </div>
 
-
+      <!-- Tabs Content : Each tab includes an SVG as a thumbnail, description and links to the related projects-->
       <div class="cell medium-9">
         <div class="tabs-content " data-tabs-content="example-tabs">
+
+          <!-- Tab one -->
           <div class="tabs-panel is-active" id="panel1v">
-            
-            
             <div class="media-object stack-for-small">
               <div class="media-object-section">
                 <div class="thumbnail">
@@ -55,17 +91,19 @@
                 </div>
               </div>
               <div class="media-object-section">
-                <h4>I Can Stack.</h4>
-                <p>Shrink the browser width to see me stack. I do tricks for dog treats, but I'm not a dog.</p>
+                <h4>Creating hard coded websites</h4>
+                <p>The foundation of this type of website is based on HTML. This means each element will be created only if required. The result will be a faster, unique, and more flexible website.</p>
+                <p>The following websites are two samples of the projects I have done with this method.</p>
+                <ul>
+                  <li><a href="./projects.html#portfolio">My Portfolio</a></li>
+                  <li><a href="./projects.html#wheatscent">Wheat Scent</a></li>
+                </ul>
               </div>
             </div>
-
-
-
           </div>
+          
+          <!-- Tab Two -->
           <div class="tabs-panel" id="panel2v">
-
-            
             <div class="media-object stack-for-small">
               <div class="media-object-section">
                 <div class="thumbnail">
@@ -73,15 +111,21 @@
                 </div>
               </div>
               <div class="media-object-section">
-                <h4>I Can Stack.</h4>
-                <p>Shrink the browser width to see me stack. I do tricks for dog treats, but I'm not a dog.</p>
+                <h4>CMS: Content Management Systems</h4>
+                <p>These frameworks provide developers with many predefined blocks and apps which makes the progress of creating a complex website much shorter. Also, anybody width  basic knowledge of working width websites can keep the websites updated and perform minor modifications. Depending on the purpose of the project, WordPress, Shopify, and drupal are my choice of CMS platforms.
+                The following websites are some examples of my experience with these frameworks. 
+                </p>
+                <ul>
+                  <li><a href="./projects.html#keivanart">WordPress: KeivanArt</a></li>
+                  <li><a href="./projects.html#campaign">Drupal: Campaign</a></li>
+                  <li><a href="./projects.html#susaart">Shopify: SusaArt</a></li>
+                </ul>
               </div>
             </div>
-
           </div>
 
+          <!-- Tab Three -->
           <div class="tabs-panel" id="panel3v">
-            
             <div class="media-object stack-for-small">
               <div class="media-object-section">
                 <div class="thumbnail">
@@ -89,16 +133,14 @@
                 </div>
               </div>
               <div class="media-object-section">
-                <h4>I Can Stack.</h4>
-                <p>Shrink the browser width to see me stack. I do tricks for dog treats, but I'm not a dog.</p>
+                <h4>SEO: Search Engin Optimization</h4>
+                <p>Search engines play a deterministic effect on the success of online businesses and service providers. Most potential customers go with the top results of search engines when they search for certain services. By using proper techniques and methods the rank of a website in the result pages can be improved. I have continuously improved my skills in this field to make my website more noticeable for search engines.</p>
               </div>
             </div>
-
           </div>
 
-          
+          <!-- Tab Five -->
           <div class="tabs-panel" id="panel4v">
-          
             <div class="media-object stack-for-small">
               <div class="media-object-section">
                 <div class="thumbnail">
@@ -106,16 +148,18 @@
                 </div>
               </div>
               <div class="media-object-section">
-                <h4>I Can Stack.</h4>
-                <p>Shrink the browser width to see me stack. I do tricks for dog treats, but I'm not a dog.</p>
+                <h4>Videography</h4>
+                <p>Social Media networks are crowded with short video clips. Businesses and service providers try to use these short videoes to promote their brands and increase their sales. Creating an effective video requires much more than having a camera, many techniques and methods play important roles in creating a high-quality and effective video. I have been trained, academically and practically in this field. the following projects are some examples of my work.</p>
+                <ul>
+                  <li><a href="./projects.html#interview">Interview</a></li>
+                  <li><a href="./projects.html#soundstory">Sound Story</a></li>
+                  <li><a href="./projects.html#lovestory">Our Short Love Story</a></li>
+                </ul>
               </div>
             </div>
-            
           </div>
 
-
-
-
+          <!-- Tab Six -->
           <div class="tabs-panel" id="panel5v">
             
             <div class="media-object stack-for-small">
@@ -125,17 +169,19 @@
                 </div>
               </div>
               <div class="media-object-section">
-                <h4>I Can Stack.</h4>
-                <p>Shrink the browser width to see me stack. I do tricks for dog treats, but I'm not a dog.</p>
+                <h4>Photography.</h4>
+                <p>A picture may convey a message that a million words cannot. This picture can be a portfolio photo or a picture of a product. I have practiced photography for years and have made many creative and appealing photos. the following projects are some examples of my work.</p>
+                <ul>
+                  <li><a href="./projects.html#interview">Creativity</a></li>
+                  <li><a href="./projects.html#soundstory">Portraite</a></li>
+                  <li><a href="./projects.html#lovestory">Story Telling</a></li>
+                </ul>
               </div>
             </div>
-
           </div>
 
-
-
+          <!-- Tab Six -->
           <div class="tabs-panel" id="panel6v">
-            
             <div class="media-object stack-for-small">
               <div class="media-object-section">
                 <div class="thumbnail">
@@ -143,33 +189,35 @@
                 </div>
               </div>
               <div class="media-object-section">
-                <h4>I Can Stack.</h4>
-                <p>Shrink the browser width to see me stack. I do tricks for dog treats, but I'm not a dog.</p>
+                <h4>Graphics</h4>
+                <p>Creativity is a part of the process of content creation. Making a logo, a flyer, an ad, or a poser can grab the attention of viewers and increase the conversion rate. Adobe creative suite has provided many tools for designers to turn their idea and imagination into a final product. I have years of experience working with these applications, such as Adobe Illustrator and Adobe Photoshop. The following projects are some examples of my work in this field.</p>
+                <li><a href="./projects.html#interview">Adobe Photoshop: Movie Poster</a></li>
+                <li><a href="./projects.html#soundstory">Adobe Illustrator Avatar</a></li>
               </div>
             </div>
-
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </main>
 
+<!-- A placeholder for footer: will be replaced by script-->
 <footer id="footer-placeholder"></footer>
 
+<!-- Replaces footer-placeholder -->
 <script src="//code.jquery.com/jquery.min.js"></script>
-<script>$.get("./menu_navigation_pages.html", function(data){ $("#nav-placeholder").replaceWith(data);});</script>
 <script>$.get("./menu_footer.html", function(data){ $("#footer-placeholder").replaceWith(data);});</script>
 
-    <script src="../foundation/js/vendor/jquery.js"></script>
-    <script src="../foundation/js/vendor/what-input.js"></script>
-    <script src="../foundation/js/vendor/foundation.js"></script>
-    <script src="../foundation/js/app.js"></script>
+<!-- Foundation CSS Library Scripts-->
+  <script src="../foundation/js/vendor/jquery.js"></script>
+  <script src="../foundation/js/vendor/what-input.js"></script>
+  <script src="../foundation/js/vendor/foundation.js"></script>
+  <script src="../foundation/js/app.js"></script>
 
 <!--Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     
-  
   </body>
-  
 </html>
