@@ -4,74 +4,207 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
 
-    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
-
-    <link rel="stylesheet" href="../foundation/css/foundation.css">
-    <link rel="stylesheet" href="../foundation/css/app.css">
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- FontAwesome Kit -->
     <script src="https://kit.fontawesome.com/0ce3b99428.js" crossorigin="anonymous"></script>
 
+    <!-- Page Title-->
+    <title>Portfolio</title>
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/projects.css">
 
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+
   </head>
-<body>
   
-  <header id="nav-placeholder"></header>
+  <body class="bg-body text-white">
+
+
+  <!-- Navigation: Main Menu-->
+  <header class="bg-dark text-light">
+  
+  <!-- Adds a hamburger menu from Bootstrap library-->
+  <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" itemscope itemtype="http://schema.org/Organization">
+    <a class="navbar-brand" href="index.html" itemprop="url" href="http://www.address.com/"><img class="logo" src="../images/logo.svg" alt="Logo" itemprop="logo"></a>
+    <button 
+      class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement" role="menu">
+        <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link"  href="../index.html" title="Home">Home</a></li>
+        <li class="nav-item" itemprop="name" role="menuitem"><a  class="nav-link" href="./services.html" title="Services">Services</a></li>
+        <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link active" aria-current="page" href="./Projects.html" title="Projects">Projects</a></li>
+        <li class="nav-item" itemprop="name" role="menuitem"><a class="nav-link" href="./about.html" title="Services">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
 
 
 <main>
-  <section class="c_wrapper" id="p_p_web">
+  <!-- Section one: Web Projects - Each project includes a "custome slideshow"  and a "desciption"-->
+  <section class="c_wrapper s_projects" id="p_p_web">
     <div><h1>Web</h1></div>
-    <div id="portfolio" class="c_container">
+
+    <!-- First Project -->
+    <div id="portfolio" class="c_project c_container">
+      <!-- Slideshow-->
       <div class="project_slides">
         <div class="c_slideshow">
-            <img class="slide_img slide_1" src="../images/projects/wheatscent/home_o.jpg" alt="">
-            <img class="slide_img slide_2" src="../images/projects/wheatscent/services_o.jpg" alt="">
-            <img class="slide_img slide_3" src="../images/projects/wheatscent/Blog_o.jpg" alt="">
-            <img class="slide_img slide_4" src="../images/projects/wheatscent/products_o.jpg" alt="">
+            <img class="slide_img slide_1" src="../images/projects/portfolio/home-1-o.jpg" alt="">
+            <img class="slide_img slide_2" src="../images/projects/portfolio/services-1-o.jpg" alt="">
+            <img class="slide_img slide_3" src="../images/projects/portfolio/projects-1-o.jpg" alt="">
+            <img class="slide_img slide_4" src="../images/projects/portfolio/about-1-o.jpg" alt="">
         </div> 
       </div>
+      <!-- Description-->
       <div class="project_description">
-        <p>This website has been  done as the final project of the Web development II course and includs 4 different pages: Home, Services, Projects, and About. Each page has been done using diferent CSS libraries.</p>
-          <div><h3>Home</h3><p>This page is created using bootstrap as a free CSS library. Using bootstrap makes the process of creating websites shorter. However, it is not fully customized and requires including a large library. </p></div>
-          <div><h3>Services</h3><p>In this page Foundation Framework has been implimented in addition to Bootstrap</p></div>
-          <div><h3>Projects and About</h3><p>Both bages are based on custom CSS, ecept for footer and navbar</p></div>
+        <h2>Portfolio</h2>
+        <p>This website has been done as the final project of the Web development II course and includs 4 different pages: Home, Services, Projects, and About. Each page has been done using diferent CSS libraries.</p>
+          <div><h5>Home</h5><p>This page is created using bootstrap as a free CSS library. It includes a loading page which by default is positioned out of the viewport and later is animated by CSS. So if the CSS breaks this loading page does not interrupt.</p></div>
+          <div><h5>Services</h5><p>In this page, Foundation Framework has been implimented in addition to Bootstrap</p></div>
+          <div><h5>Projects and About</h5><p>Both pages are styled using custom CSS, except for the footer and navbar</p></div>
           <div><p>All SVG images are created in illustrator and animated in CSS by myself</p></div>
-      </div>
-    </div>
-    <div id="wheatscent" class="c_container">
-      <div class="project_slides">
-        <div class="c_slideshow">
-            <img class="slide_img slide_1" src="../images/projects/wheatscent/home_o.jpg" alt="">
-            <img class="slide_img slide_2" src="../images/projects/wheatscent/services_o.jpg" alt="">
-            <img class="slide_img slide_3" src="../images/projects/wheatscent/Blog_o.jpg" alt="">
-            <img class="slide_img slide_4" src="../images/projects/wheatscent/products_o.jpg" alt="">
-        </div> 
-      </div>
-      <div class="project_description">
-        <p>This website has been  done as the final project of the Web development II course and includs 4 different pages: Home, Services, Projects, and About. Each page has been done using diferent CSS libraries.</p>
-          <div><h3>Home</h3><p>This page is created using bootstrap as a free CSS library. Using bootstrap makes the process of creating websites shorter. However, it is not fully customized and requires including a large library. </p></div>
-          <div><h3>Services</h3><p>In this page Foundation Framework has been implimented in addition to Bootstrap</p></div>
-          <div><h3>Projects and About</h3><p>Both bages are based on custom CSS, ecept for footer and navbar</p></div>
-          <div><p>All SVG images are created in illustrator and animated in CSS by myself</p></div>
+          <div><a href="#">Click to visit the website</a></div>
       </div>
     </div>
 
+    <!-- Seconde Project -->
+    <div id="wheatscent" class="c_project c_container">
+      <div class="project_slides">
+        <!-- Slideshow-->
+        <div class="c_slideshow">
+            <img class="slide_img slide_1" src="../images/projects/wheatscent/home_o.jpg" alt="">
+            <img class="slide_img slide_2" src="../images/projects/wheatscent/services_o.jpg" alt="">
+            <img class="slide_img slide_3" src="../images/projects/wheatscent/Blog_o.jpg" alt="">
+            <img class="slide_img slide_4" src="../images/projects/wheatscent/products_o.jpg" alt="">
+        </div> 
+      </div>
+      <!-- Description-->
+      <div class="project_description">
+        <div>
+          <h2>WheatScent</h2>
+          <p>This website is designed for the final project of the Design Foundation course and has been created using pure CSS and HTML for the midterm of the WebdevelopmentII course. the focus of this project was to create a fast website. That has been achieved by using responsive images with the proper resolution based on the viewport.</p>
+        </div>
+        <div><a href="http://wheatscent.keivanart.com/">Click to visit the website</a></div>
+      </div>
+    </div>
+
+        <!-- Third Project -->
+        <div id="keivanart" class="c_project c_container">
+          <div class="project_slides">
+            <!-- Slideshow-->
+            <div class="c_slideshow">
+                <img class="slide_img slide_1" src="../images/projects/keivanArt/home-1-o.jpg" alt="">
+                <img class="slide_img slide_2" src="../images/projects/keivanArt/home-2-o.jpg" alt="">
+                <img class="slide_img slide_3" src="../images/projects/keivanArt/services-1-o.jpg" alt="">
+                <img class="slide_img slide_4" src="../images/projects/keivanArt/services-2-o.jpg" alt="">
+            </div> 
+          </div>
+          <!-- Description-->
+          <div class="project_description">
+            <div>
+              <h2>KeivanArt</h2>
+              <p>This project is an example of a website created by WordPress. Many modules have been installed and used to make the website more dynamic. Most of the default features have been modified to have complete control over elements. I have tried to add features which are not available by default, such as using SVGs. </p>
+            </div>
+            <div><a href="https://www.keivanart.com/">Click to visit the website</a></div>
+          </div>
+        </div>
+
+        <!-- Fourth Project -->
+        <div id="campaign" class="c_project c_container">
+          <div class="project_slides">
+            <!-- Slideshow-->
+            <div class="c_slideshow">
+                <img class="slide_img slide_1" src="../images/projects/campaign/home-1-o.jpg" alt="">
+                <img class="slide_img slide_2" src="../images/projects/campaign/home-2-o.jpg" alt="">
+                <img class="slide_img slide_3" src="../images/projects/campaign/campaign-1-o.jpg" alt="">
+                <img class="slide_img slide_4" src="../images/projects/campaign/news-1-o.jpg" alt="">
+            </div> 
+          </div>
+          <!-- Description-->
+          <div class="project_description">
+            <div>
+              <h2>Campaign</h2>
+              <p>The Campaign website is created using Drupal. This CMS foundation provides high control over user permissions. Furthermore, This platform is suitable for informative websites. It is easy to add blogs and news. I tried to modify the default configuration and modules as much as possible. </p>
+            </div>
+            <div><a href="http://drupal.keivanart.com/">Click to visit the website</a></div>
+          </div>
+        </div>
+
+        <!-- Fifth Project -->
+        <div id="susaart" class="c_project c_container">
+          <div class="project_slides">
+            <!-- Slideshow-->
+            <div class="c_slideshow">
+                <img class="slide_img slide_1" src="../images/projects/keivanimd/home-1-o.jpg" alt="">
+                <img class="slide_img slide_2" src="../images/projects/keivanimd/home-2-o.jpg" alt="">
+                <img class="slide_img slide_3" src="../images/projects/keivanimd/cataloge-1-o.jpg" alt="">
+                <img class="slide_img slide_4" src="../images/projects/keivanimd/blog-1-o.jpg" alt="">
+            </div> 
+          </div>
+          <!-- Description-->
+          <div class="project_description">
+            <div>
+              <h2>SusaArt</h2>
+              <p>A great example of a website using Shopify. Shopify platform is customized for online shopping websites. By default, it has the capability of categorizing the products and making collections. The cart module is active and functional. Many free and attractive themes are provided. This website was a project for Content Management System course. "Pass: teach010</p>
+            </div>
+            <div><a href="https://keivanimd.myshopify.com/">Click to visit the website</a></div>
+          </div>
+        </div>
 
   </section>
     
-    <div><h1>Media</h1></div>
+  <section class="c_wrapper s_projects" id="p_p_graphic">
+    <div><h1>Graphic</h1></div>
+
+<div class="graphi_project_container">
+      <!-- Poseter Project -->
+        <!-- Project Image-->
+        <div id="poster_img" class="graphic_img">
+          <img src="../images/projects/poster.jpg" alt="">
+        </div> 
+        <!-- Description-->
+        <div id="poster_inf" class="project_description">
+          <div>
+            <h2>Poster</h2>
+            <p>A poster for a fictional horror movie. This poster is created using Adobe Photoshop. This project aimed to use photoshop features as much as possible. I used different kinds of brushes, filters, and layers to create this poster. This is one of my favourite artworks.</p>
+          </div>
+        </div>
+
+  
+      <!-- Avatar Project -->
+        <!-- Project Image-->
+        <div id="avatar_img" class="graphic_img">
+          <img src="../images/projects/avatar.jpg" alt="">
+        </div> 
+        <!-- Description-->
+        <div id="avatar_inf" class="project_description">
+          <div>
+            <h2>Avatar</h2>
+            <p>These avatars have been created using Adobe Illustrator. All elements are created and modified inside the application. Each avatar is proper for a different screen size. Using gradient filters has made these avatars so lovely.</p>
+          </div>
+        </div>
+
+</div>
+    
+
+    
+  </section>
+
 </main>
 
 <footer id="footer-placeholder"></footer>

@@ -1,5 +1,5 @@
 :root{
-    --main-load-du:0.5s;
+    --main-load-du:7s;
 }
 main{transform: calc(translate(0vw, 0vh) - 1s); animation: hide_main var(--main-load-du) 1;}
 .loading{
