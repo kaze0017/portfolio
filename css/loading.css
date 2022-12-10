@@ -1,7 +1,8 @@
 :root{
     --main-load-du:7s;
+    --main-color-w5b0: #F0F0F0;
 }
-main{transform: calc(translate(0vw, 0vh) - 1s); animation: hide_main var(--main-load-du) 1;}
+main{transform: translate(0vw, 0vh); animation: hide_main var(--main-load-du) 1;}
 .loading{
     position: absolute;
     height:100vh; 
@@ -16,7 +17,8 @@ main{transform: calc(translate(0vw, 0vh) - 1s); animation: hide_main var(--main-
     width: fit-content;
     animation: typing 2s steps(15) forwards,  border-right 2s, blink-caret 0.266s step-end 15;
     overflow: hidden; 
-    border-right: 0 solid white;
+    color: var(--main-color-w5b0);;
+    border-right: 0 solid var(--main-color-w5b0);
     white-space: nowrap;
 }
 .loading  h2{
@@ -26,14 +28,16 @@ main{transform: calc(translate(0vw, 0vh) - 1s); animation: hide_main var(--main-
     animation:typing 3s steps(20) forwards, border-right 10s 1, blink-caret 0.266s step-end infinite, h-transform 1s 1 forwards;
     animation-delay: 2s;
     overflow: hidden; 
-    border-right: 0 solid white;
+    color: var(--main-color-w5b0);;
+    border-right: 0 solid var(--main-color-w5b0);
     white-space: nowrap;}
 
 /**** Animations*****/
 @keyframes hide_main{
-    from-to{transform: translate(0vw, 0vh);}
+    0%{transform: translate(0vw, 0vh);}
     1%{transform: translate(-200vw, -200vh);}
     99%{transform: translate(-200vw, -200vh);}
+    100%{transform: translate(0vw, 0vh);}
 }
 @keyframes load_loading{
     0%{width: 100vw;height: 100vh;transform: translate(0, 0);}

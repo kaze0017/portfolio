@@ -37,10 +37,10 @@
     </div>
 
     <!-- Section one: Banner-->
-    <header class="bg-dark text-light">
+    <header class="bg-dark text-light mb-2">
       <!-- Adds a hamburger menu from Bootstrap library-->
       <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" itemscope itemtype="http://schema.org/Organization">
-          <a class="navbar-brand" href="index.html" itemprop="url" href="http://www.address.com/"><img class="logo" src="./images/logo.svg" alt="Logo" itemprop="logo"></a>
+          <a class="navbar-brand" href="./index.html" itemprop="url"><img class="logo" src="./images/logo.svg" alt="Logo" itemprop="logo"></a>
           <button 
             class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -97,7 +97,7 @@
         <div class="row bg-dark">
 
           <!-- Services: General Info (4*col)-->
-          <div class="col-lg-4 row">
+          <div class="col-lg-4 row p-4">
             <div class="col-lg-6 d-flex flex-column justify-content-center"><h2>Services</h2><object data="./images/sections/Gears.svg"></object></div>
             <div class="col-lg-6 my-auto"><p> Advanced skills in a variety of services and techniques which are essential for creating an attractive and dynamic website or media project. These services include different coding languages, CMS platforms, videography, photography, and graphic designs using adobe creative suite.</p>
             </div>
@@ -214,12 +214,15 @@
       <!-- Section: Projects -->
       <section class="projects container mt-5">
         <div class="row bg-dark">
-          <div class="col-lg-4 row">
+          <div class="col-lg-4 row p-4">
             <div class="col-lg-6 d-flex flex-column justify-content-center"><h2>Projects</h2><object data="./images/sections/check_list.svg"></object></div>
             <div class="col-lg-6 my-auto"><p>I have done many projects with different purposes using different methods. These projects include websites, interviews, portfolios, posters and many other. They are all with high standards, according to the purpose of the project. Here is a collection of selected ones. </p></div>
           </div>
+
+          <!-- Projects: Projects (Web + Media) (8*col)-->
+          <!-- The section has two sub section -  Hovered subsection will grow and the other one will shrink-->
           <div class=" col-lg-8 container d-lg-flex flex-row  flex-fill" >
-            
+
             <!-- Web Projects-->
             <div id="projects_web" class="section_slice flex-fill d-flex flex-column justify-content-around align-items-center py-2 container ">
               <h2 >Web</h2>
@@ -234,7 +237,7 @@
                       <source media="(max-width:300px)" srcset="./images/projects/wheatscent/home_o-derivatives/home_300_x_200.jpg 1x, ./images/projects/wheatscent/home_o-derivatives/home_600_x_400.jpg 2x">
                       <source media="(max-width:600px)" srcset="./images/projects/wheatscent/home_o-derivatives/home_600_x_400.jpg 1x, ./images/projects/wheatscent/home_o-derivatives/home_1200_x_800.jpg 2x">
                       <source media="(max-width:1200px)" srcset="./images/projects/wheatscent/home_o-derivatives/home_1200_x_800.jpg 1x">
-                      <img class="slide_img slide_1" src="./images/projects/wheatscent/home_o.jpg" alt="WheatScent Home Page" class="banner masked-img">
+                      <img class="slide_img slide_1" src="./images/projects/wheatscent/home_o.jpg" alt="WheatScent Home Page">
                     </picture>
 
                     <!-- Web - Slide 2 -->
@@ -242,7 +245,7 @@
                       <source media="(max-width:300px)" srcset="./images/projects/portfolio/home-1-o-derivatives/home-1-300_x_200.jpg 1x, ./images/projects/portfolio/home-1-o-derivatives/home-1-600_x_400.jpg 2x">
                       <source media="(max-width:600px)" srcset="./images/projects/portfolio/home-1-o-derivatives/home-1-600_x_400.jpg 1x, ./images/projects/portfolio/home-1-o-derivatives/home-1-1200_x_800.jpg 2x">
                       <source media="(max-width:1200px)" srcset="./images/projects/portfolio/home-1-o-derivatives/home-1-1200_x_800.jpg 1x">
-                      <img class="slide_img slide_2" src="./images/projects/portfolio/home-1-o.jpg" alt="Porfolio Home Page" class="banner masked-img">
+                      <img class="slide_img slide_2" src="./images/projects/portfolio/home-1-o.jpg" alt="Porfolio Home Page">
                     </picture>
 
                     <!-- Web - Slide 3 -->
@@ -250,7 +253,7 @@
                       <source media="(max-width:300px)" srcset="./images/projects/keivanimd/home-1-o-derivatives/home-1-o-300_x_200.jpg 1x, ./images/projects/keivanimd/home-1-o-derivatives/home-1-o-600_x_400.jpg 2x">
                       <source media="(max-width:600px)" srcset="./images/projects/keivanimd/home-1-o-derivatives/home-1-o-600_x_400.jpg 1x, ./images/projects/keivanimd/home-1-o-derivatives/home-1-o-1200_x_800.jpg 2x">
                       <source media="(max-width:1200px)" srcset="./images/projects/keivanimd/home-1-o-derivatives/home-1-o-1200_x_800.jpg 1x">
-                      <img class="slide_img slide_3" src="./images/projects/keivanimd/home-1-o.jpg" alt="SosaArt Homepage" class="banner masked-img">
+                      <img class="slide_img slide_3" src="./images/projects/keivanimd/home-1-o.jpg" alt="SosaArt Homepage">
                     </picture>
 
                     <!-- Web - Slide 4 -->
@@ -258,7 +261,7 @@
                       <source media="(max-width:300px)" srcset="./images/projects/keivanArt/home-1-o-derivatives/home-1-o-300_x_200.jpg 1x, ./images/projects/keivanArt/home-1-o-derivatives/home-1-o-600_x_400.jpg 2x">
                       <source media="(max-width:600px)" srcset="./images/projects/keivanArt/home-1-o-derivatives/home-1-o-600_x_400.jpg 1x, ./images/projects/keivanArt/home-1-o-derivatives/home-1-o-1200_x_800.jpg 2x">
                       <source media="(max-width:1200px)" srcset="./images/projects/keivanArt/home-1-o-derivatives/home-1-o-1200_x_800.jpg 1x">
-                      <img class="slide_img slide_4" src="./images/projects/keivanArt/home-1-o.jpg" alt="KeivanArt Homepage" class="banner masked-img">
+                      <img class="slide_img slide_4" src="./images/projects/keivanArt/home-1-o.jpg" alt="KeivanArt Homepage">
                     </picture>
 
                   </div> 
@@ -281,7 +284,7 @@
                       <source media="(max-width:300px)" srcset="./images/projects/media/interview-o-derivatives/interview-o-300_x_200.jpg 1x, ./images/projects/media/interview-o-derivatives/interview-o-600_x_400.jpg 2x">
                       <source media="(max-width:600px)" srcset="./images/projects/media/interview-o-derivatives/interview-o-600_x_400.jpg 1x, ./images/projects/media/interview-o-derivatives/interview-o-1200_x_800.jpg 2x">
                       <source media="(max-width:1200px)" srcset="./images/projects/media/interview-o-derivatives/interview-o-1200_x_800.jpg 1x">
-                      <img class="slide_img slide_1" src="./images/projects/media/interview-o.jpg" alt="Intervie screenshot" class="banner masked-img">
+                      <img class="slide_img slide_1" src="./images/projects/media/interview-o.jpg" alt="Intervie screenshot">
                     </picture>
 
                   <!-- Web - Slide 2 -->
@@ -289,7 +292,7 @@
                       <source media="(max-width:300px)" srcset="./images/projects/media/story-o-derivatives/story-o-300_x_200.jpg 1x,./images/projects/media/story-o-derivatives/story-o-600_x_400.jpg 2x">
                       <source media="(max-width:600px)" srcset="./images/projects/media/story-o-derivatives/story-o-600_x_400.jpg 1x, ./images/projects/media/story-o-derivatives/story-o-1200_x_800.jpg 2x">
                       <source media="(max-width:1200px)" srcset="./images/projects/media/story-o-derivatives/story-o-1200_x_800.jpg 1x">
-                      <img class="slide_img slide_2" src="./images/projects/media/story-o.jpg" alt="Story screenshot" class="banner masked-img">
+                      <img class="slide_img slide_2" src="./images/projects/media/story-o.jpg" alt="Story screenshot">
                     </picture>
 
                   <!-- Web - Slide 3 -->
@@ -297,7 +300,7 @@
                       <source media="(max-width:300px)" srcset="./images/projects/media/poster-o-derivatives/poster-o-300_x_200.jpg 1x, ./images/projects/media/poster-o-derivatives/poster-o-600_x_400.jpg 2x">
                       <source media="(max-width:600px)" srcset="./images/projects/media/poster-o-derivatives/poster-o-600_x_400.jpg 1x, ./images/projects/media/poster-o-derivatives/poster-o-1200_x_800.jpg 2x">
                       <source media="(max-width:1200px)" srcset="./images/projects/media/poster-o-derivatives/poster-o-1200_x_800.jpg 1x">
-                      <img class="slide_img slide_3" src="./images/projects/media/poster-o.jpg" alt="Poster" class="banner masked-img">
+                      <img class="slide_img slide_3" src="./images/projects/media/poster-o.jpg" alt="Poster">
                     </picture>
 
                   <!-- Web - Slide 4 -->
@@ -305,7 +308,7 @@
                       <source media="(max-width:300px)" srcset="./images/projects/media/avatars-o-derivatives/avatars-o-300_x_200.jpg 1x, ./images/projects/media/avatars-o-derivatives/avatars-o-600_x_400.jpg 2x">
                       <source media="(max-width:600px)" srcset="./images/projects/media/avatars-o-derivatives/avatars-o-600_x_400.jpg 1x, ./images/projects/media/avatars-o-derivatives/avatars-o-1200_x_800.jpg 2x">
                       <source media="(max-width:1200px)" srcset="./images/projects/media/avatars-o-derivatives/avatars-o-1200_x_800.jpg 1x">
-                      <img class="slide_img slide_4" src="./images/projects/media/avatars-o.jpg" alt="Avatar" class="banner masked-img">
+                      <img class="slide_img slide_4" src="./images/projects/media/avatars-o.jpg" alt="Avatar">
                     </picture>
 
                   </div> 

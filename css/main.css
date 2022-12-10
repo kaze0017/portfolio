@@ -8,10 +8,10 @@
     --main-delay-w3:calc(var(--main-delay-w2) + 3 * var(--main-type-speed) + var(--main-word-delay));
 
     --main-slides-duration:10s;
-    --main-slide-duration:calc(var(var(--main-slides-duration) * 2 / 9));
-    --main-slide-tranition:calc(var(var(--main-slides-duration) * 1 / 36));
+    --main-slide-duration:calc(var(--main-slides-duration) * 2 / 9);
+    --main-slide-tranition:calc(var(--main-slides-duration) * 1 / 36);
     --main-slide-delay:calc(var(--main-slides-duration) / 4);
-    
+
  /***************Defining Main Colors **************/
     --main-color-purple:#A074C4;
     --main-color-blue-d:#519ABA;
@@ -40,7 +40,8 @@
     --bs-light-rgb:var(--main-color-w4b1);
     --bs-white-rgb:var(--main-color-w5b0-rgb);
     --bs-body-bg-rgb:var(--main-color-w3b2-rgb);
-
+    --bs-nav-link-font-size:1.5rem;
+    --bs-nav-link-font-weight:1.5rem;
 }
 
 /********** Cahnging bootstrap variables********/
@@ -61,16 +62,13 @@
     --bs-btn-disabled-bg: var(--main-color-green_1);
     --bs-btn-disabled-border-color: var(--main-color-green_1);
 }
-
 /************* Reusable Classes*******************/
 .c_container{display: flex; flex-direction: row;align-items: stretch;}
 .c_wrapper{max-width: 1200px;margin: auto;}
 
-
 body{min-height:100vh; display: flex; flex-direction: column; justify-content: space-between;}
 /***** Navigation *****/
 .logo{height: 50px;width: 50px;}
-
 
 nav  .navbar-collapse{justify-content:flex-end}
 /***** Footer *****/
@@ -79,14 +77,9 @@ footer .sociallink{text-align: right;}
 i{ text-shadow: 0 0 5px grey, 0 0 5px grey, 0 0 5px grey, 0 0 5px grey;}
 .sociallink{font-size: 2rem;}
 
-
-
-
-
 /***********Styling Portrait image ****/
 .portraite_image{max-height:35vh;}
 .charackter ul {list-style-type: none;padding: 0;}
-
 
 /*************** Slicing section : Cpmmon classes for Services and Projects *****************/
 /***** Using min-max and hover t change width of the subsections *******/
@@ -94,15 +87,11 @@ i{ text-shadow: 0 0 5px grey, 0 0 5px grey, 0 0 5px grey, 0 0 5px grey;}
 .section_slice:hover {min-width: 80%; }
 .slice_container{display: none;opacity: 0; height: fit-content;width: 100%;}
 .section_slice:hover .slice_container{display: block;animation: reveal_slice_container 1s 0.5s 1 forwards; margin-bottom: 15px;}
-
 .section_slice h2{
     color: var(--main-color-w1b4);
     padding:0 10px;
     background-image: radial-gradient(rgba(255,255,255,0.8) 60%,rgba(255,255,255,0.01));
-
-    backdrop-filter: blur(20x);
-    -webkit-backdrop-filter: blur(20x);
-
+    backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
 
@@ -117,17 +106,13 @@ i{ text-shadow: 0 0 5px grey, 0 0 5px grey, 0 0 5px grey, 0 0 5px grey;}
 
 /******************** Card *******************************/
 .card_transparent{
-
     margin: 10px 0;
-    /* height: 50vh; */
     min-height: 355px;
     color: var(--main-color-w1b4);
     padding:0 10px;
     background: linear-gradient(135deg,  rgba(255,255,255,1)  ,rgba(255,255,255,0.5));
-    backdrop-filter: blur(10x);
-    -webkit-backdrop-filter: blur(10x);
+    backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -137,25 +122,18 @@ i{ text-shadow: 0 0 5px grey, 0 0 5px grey, 0 0 5px grey, 0 0 5px grey;}
 .card-body{display:flex; flex-direction:column;flex-grow: 1;}
 /* .card-body p:last-child{justify-self:flex-end} */
 .card_image{width: 80%;display:flex;}
-
-
 /********************** Projects *****************************/
 #projects_web{ background-image: url('../images/projrcts_web_bg.jpg'); background-size:cover;}
 #projects_media{ background-image: url('../images/projects_media_bg.jpg'); background-size:cover;}
-
 .projects .section_slice{opacity: 1;}
-
 .c_slideshow{position: relative; height:65vh;max-height:600px; margin:10px}
-
 .slide_img{
     position:absolute; max-width: 100%;max-height: 100%; object-fit: contain; top: 50%;left: 50%;
     transform: translate(-50%,0) scale(0);
     animation: anime_slideshow  var(--main-slides-duration) infinite;}
-
 .slide_2{animation-delay:  calc(1 * var(--main-slide-delay));}
 .slide_3{animation-delay:  calc(2 * var(--main-slide-delay));}
 .slide_4{animation-delay:  calc(3 * var(--main-slide-delay));}
-
 @keyframes anime_slideshow {
     0%{transform: translate(-50%,-50%) scale(0);left: 0%;}
     2.77%{transform: translate(-50%,-50%) scale(1);left: 50%;}
@@ -163,6 +141,4 @@ i{ text-shadow: 0 0 5px grey, 0 0 5px grey, 0 0 5px grey, 0 0 5px grey;}
     27.77%{transform: translate(-50%,-50%) scale(0);left: 100%;}
     100%{transform: translate(-50%,-50%) scale(0);left: 100%;}
 }
-
-
 .c_slideshow h1{z-index: 2; color: blue;background-color: rgba(255, 255, 255, 0.37); position: absolute; bottom: 0;height: fit-content;}
