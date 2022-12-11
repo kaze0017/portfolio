@@ -27,10 +27,9 @@ It includes for pages: Home. Projects, Services, and About pages
 
 
 ## Color Reference
-
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
 | Color             | Hex                                           |
 | ----------------- | --------------------------------------------- |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
 | purple  | ![#A074C4](https://via.placeholder.com/10/0a192f?text=+)|
 | blue-d  | ![#519ABA](https://via.placeholder.com/10/f8f8f8?text=+)|
 | blue-b  | ![#569CD6](https://via.placeholder.com/10/00b48a?text=+)|
