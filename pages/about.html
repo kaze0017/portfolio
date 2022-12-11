@@ -1,10 +1,6 @@
-
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +32,7 @@
   
   <!-- Adds a hamburger menu from Bootstrap library-->
   <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" itemscope itemtype="http://schema.org/Organization">
-    <a class="navbar-brand" href="index.html" itemprop="url" href="http://www.address.com/"><img class="logo" src="../images/logo.svg" alt="Logo" itemprop="logo"></a>
+    <a class="navbar-brand" href="index.html" itemprop="url"><img class="logo" src="../images/logo.svg" alt="Logo" itemprop="logo"></a>
     <button 
       class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -55,8 +51,20 @@
 
 
 <main class="c_wrapper">
+  <!-- About container includes to child: Portrait image and info-->
+  <!-- Desktop version: two column grid  - mobile version: two row grid-->
 <div class="about_container" itemscope itemtype="http://schema.org/Person">
-  <div id="about_img"><span itemprop="image"><img src="../images/keivan_2.png" alt=""></span></div>
+  <!-- Portrait Image-->
+  <div id="about_img">
+    <span itemprop="image">
+      <picture >
+        <source media="(max-width:600px)" srcset="../images/keivan_2-derivatives/keivan_2-300_x_332.png 1x, ../images/keivan_2-derivatives/keivan_2-600_x_664.png 2x">
+        <source media="(max-width:1200px)" srcset="../images/keivan_2-derivatives/keivan_2-600_x_664.png 1x">
+        <img class="portraite_image" src="../images/keivan_2.png" alt="Keivan's portfolio"  itemprop="image">
+      </picture>
+    </span>
+  </div>
+  <!-- Info-->
   <div id="about_inf">
     <div>
       <h2><span itemprop="givenName" title="Keivan">Keivan</span> <span itemprop="familyName" title="Kazemi">Kazemi</span></h2>
