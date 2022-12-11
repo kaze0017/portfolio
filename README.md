@@ -11,6 +11,8 @@ It includes for pages: Home. Projects, Services, and About pages
     projrcts_web_bg.jpg   @ Photo by Pixabay: https://www.pexels.com/photo/apple-laptop-notebook-office-39284/
     projects_graphic_bg.jpg @ Photo by Caleb Oquendo: https://www.pexels.com/photo/modern-digital-movie-camera-in-dark-room-7709692/
 
+    All animation and SVGs are created by Keivan Kazemi and have my Copyright
+
 
 
 
