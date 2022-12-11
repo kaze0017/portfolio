@@ -7,8 +7,8 @@
     --main-delay-w3:calc(var(--main-delay-w2) + 3 * var(--main-type-speed) + var(--main-word-delay));
 
     --main-slides-duration:10s;
-    --main-slide-duration:calc(var(var(--main-slides-duration) * 2 / 9));
-    --main-slide-tranition:calc(var(var(--main-slides-duration) * 1 / 36));
+    --main-slide-duration:calc(var(--main-slides-duration) * 2 / 9);
+    --main-slide-tranition:calc(var(--main-slides-duration) * 1 / 36);
     --main-slide-delay:calc(var(--main-slides-duration) / 4);
 
     --main-color-purple:#A074C4;
@@ -45,7 +45,7 @@ a{color: var(--main-color-blue-b)}
 a:hover{color: var(--main-color-blue-d)}
 ::marker {color: var(--main-color-blue-b)}
 .tabs-title > a{font-size: 1rem;}
-.grid-container{background-color: none;margin-top: auto;margin-bottom: auto;}
+.grid-container{margin-top: auto;margin-bottom: auto;}
 .tabs{background-color: var(--main-color-w2b3);border: none;;}
 .tabs .is-active{background-color: var(--main-color-w1b4);}
 .is-active{background-color: var(--main-color-w1b4);border: none;}

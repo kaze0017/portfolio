@@ -2,7 +2,6 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Required meta tags -->
@@ -36,7 +35,7 @@
   
   <!-- Adds a hamburger menu from Bootstrap library-->
   <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" itemscope itemtype="http://schema.org/Organization">
-    <a class="navbar-brand" href="index.html" itemprop="url" href="http://www.address.com/"><img class="logo" src="../images/logo.svg" alt="Logo" itemprop="logo"></a>
+    <a class="navbar-brand" href="./index.html" itemprop="url"><img class="logo" src="../images/logo.svg" alt="Logo" itemprop="logo"></a>
     <button 
       class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -59,15 +58,42 @@
   <section class="c_wrapper s_projects" id="p_p_web">
     <div><h1>Web</h1></div>
 
-    <!-- First Project -->
+    <!-- First Project: Porfolio -->
     <div id="portfolio" class="c_project c_container">
       <!-- Slideshow-->
       <div class="project_slides">
+
+        <!-- Contains 4 slides: Each slide is an image with three derivatives for 300px, 600px, 1200px -->
         <div class="c_slideshow">
-            <img class="slide_img slide_1" src="../images/projects/portfolio/home-1-o.jpg" alt="">
-            <img class="slide_img slide_2" src="../images/projects/portfolio/services-1-o.jpg" alt="">
-            <img class="slide_img slide_3" src="../images/projects/portfolio/projects-1-o.jpg" alt="">
-            <img class="slide_img slide_4" src="../images/projects/portfolio/about-1-o.jpg" alt="">
+          <!-- Slide 1 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/portfolio/home-1-o-derivatives/home-1-300_x_200.jpg 1x, ../images/projects/portfolio/home-1-o-derivatives/home-1-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/portfolio/home-1-o-derivatives/home-1-600_x_400.jpg 1x, ../images/projects/portfolio/home-1-o-derivatives/home-1-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/portfolio/home-1-o-derivatives/home-1-1200_x_800.jpg 1x">
+            <img class="slide_img slide_1" src="../images/projects/portfolio/home-1-o.jpg" alt="Porfolio Home Page">
+          </picture>
+          <!-- Slide 2 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/portfolio/services-1-o-derivatives/services-1-o-300_x_200.jpg 1x, ../images/projects/portfolio/services-1-o-derivatives/services-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/portfolio/services-1-o-derivatives/services-1-o-600_x_400.jpg 1x, ../images/projects/portfolio/services-1-o-derivatives/services-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/portfolio/services-1-o-derivatives/services-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_2" src="../images/projects/portfolio/services-1-o.jpg" alt="Porfolio Services Page">
+          </picture>
+          <!-- Slide 3 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/portfolio/projects-1-o-derivatives/projects-1-o-300_x_200.jpg 1x, ../images/projects/portfolio/projects-1-o-derivatives/projects-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/portfolio/projects-1-o-derivatives/projects-1-o-600_x_400.jpg 1x, ../images/projects/portfolio/projects-1-o-derivatives/projects-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/portfolio/projects-1-o-derivatives/projects-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_3" src="../images/projects/portfolio/projects-1-o.jpg" alt="Porfolio Projects Page">
+          </picture>
+          <!-- Slide 4 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/portfolio/about-1-o-derivatives/about-1-o-300_x_200.jpg 1x, ../images/projects/portfolio/about-1-o-derivatives/about-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/portfolio/about-1-o-derivatives/about-1-o-600_x_400.jpg 1x, ../images/projects/portfolio/about-1-o-derivatives/about-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/portfolio/about-1-o-derivatives/about-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_4" src="../images/projects/portfolio/about-1-o.jpg" alt="Porfolio About Page">
+            </picture>
+
         </div> 
       </div>
       <!-- Description-->
@@ -82,16 +108,43 @@
       </div>
     </div>
 
-    <!-- Seconde Project -->
+    <!-- Seconde Project:  WheatScent-->
     <div id="wheatscent" class="c_project c_container">
       <div class="project_slides">
         <!-- Slideshow-->
         <div class="c_slideshow">
-            <img class="slide_img slide_1" src="../images/projects/wheatscent/home_o.jpg" alt="">
-            <img class="slide_img slide_2" src="../images/projects/wheatscent/services_o.jpg" alt="">
-            <img class="slide_img slide_3" src="../images/projects/wheatscent/Blog_o.jpg" alt="">
-            <img class="slide_img slide_4" src="../images/projects/wheatscent/products_o.jpg" alt="">
-        </div> 
+          <!-- Slide 1 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/wheatscent/home_o-derivatives/home_300_x_200.jpg 1x, ../images/projects/wheatscent/home_o-derivatives/home_600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/wheatscent/home_o-derivatives/home_600_x_400.jpg 1x, ../images/projects/wheatscent/home_o-derivatives/home_1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/wheatscent/home_o-derivatives/home_1200_x_800.jpg 1x">
+            <img class="slide_img slide_1" src="../images/projects/wheatscent/home_o.jpg" alt="WheatScent Home Page">
+          </picture>
+          <!-- Slide 2 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/wheatscent/services_o-derivatives/services_300_x_200.jpg 1x, ../images/projects/wheatscent/services_o-derivatives/services_600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/wheatscent/services_o-derivatives/services_600_x_400.jpg 1x, ../images/projects/wheatscent/services_o-derivatives/services_1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/wheatscent/services_o-derivatives/services_1200_x_800.jpg 1x">
+            <img class="slide_img slide_2" src="../images/projects/wheatscent/services_o.jpg" alt="WheatScent Services Page">
+          </picture>
+
+          <!-- Slide 3 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/portfolio/projects-1-o-derivatives/projects-1-o-300_x_200.jpg 1x, ../images/projects/wheatscent/products_o-derivatives/products_600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/wheatscent/products_o-derivatives/products_600_x_400.jpg 1x, ../images/projects/wheatscent/products_o-derivatives/products_1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/wheatscent/products_o-derivatives/products_1200_x_800.jpg 1x">
+            <img class="slide_img slide_3" src="../images/projects/wheatscent/products_o.jpg" alt="WheatScent Products Page">
+          </picture>
+
+          <!-- Slide 4 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/wheatscent/Blog_o-derivatives/Blog_300_x_200.jpg 1x, ../images/projects/wheatscent/Blog_o-derivatives/Blog_600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/wheatscent/Blog_o-derivatives/Blog_600_x_400.jpg 1x, ../images/projects/wheatscent/Blog_o-derivatives/Blog_1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/wheatscent/Blog_o-derivatives/Blog_1200_x_800.jpg 1x">
+            <img class="slide_img slide_4" src="../images/projects/wheatscent/Blog_o.jpg" alt="WheatScent Blog Page">
+          </picture>
+        
+        </div>  
       </div>
       <!-- Description-->
       <div class="project_description">
@@ -103,38 +156,95 @@
       </div>
     </div>
 
-        <!-- Third Project -->
-        <div id="keivanart" class="c_project c_container">
-          <div class="project_slides">
-            <!-- Slideshow-->
-            <div class="c_slideshow">
-                <img class="slide_img slide_1" src="../images/projects/keivanArt/home-1-o.jpg" alt="">
-                <img class="slide_img slide_2" src="../images/projects/keivanArt/home-2-o.jpg" alt="">
-                <img class="slide_img slide_3" src="../images/projects/keivanArt/services-1-o.jpg" alt="">
-                <img class="slide_img slide_4" src="../images/projects/keivanArt/services-2-o.jpg" alt="">
-            </div> 
-          </div>
-          <!-- Description-->
-          <div class="project_description">
-            <div>
-              <h2>KeivanArt</h2>
-              <p>This project is an example of a website created by WordPress. Many modules have been installed and used to make the website more dynamic. Most of the default features have been modified to have complete control over elements. I have tried to add features which are not available by default, such as using SVGs. </p>
-            </div>
-            <div><a href="https://www.keivanart.com/">Click to visit the website</a></div>
-          </div>
-        </div>
+    <!-- Third Project: KeivanArt -->
+    <div id="keivanart" class="c_project c_container">
+      <div class="project_slides">
+        <!-- Slideshow-->
+        <div class="c_slideshow">
+          <!-- Slide 1 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/keivanArt/home-1-o-derivatives/home-1-o-300_x_200.jpg 1x, ../images/projects/keivanArt/home-1-o-derivatives/home-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/keivanArt/home-1-o-derivatives/home-1-o-600_x_400.jpg 1x, ../images/projects/keivanArt/home-1-o-derivatives/home-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/keivanArt/home-1-o-derivatives/home-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_1" src="../images/projects/keivanArt/home-1-o.jpg" alt="KeivanArt Home Page 1">
+          </picture>
 
-        <!-- Fourth Project -->
-        <div id="campaign" class="c_project c_container">
-          <div class="project_slides">
-            <!-- Slideshow-->
-            <div class="c_slideshow">
-                <img class="slide_img slide_1" src="../images/projects/campaign/home-1-o.jpg" alt="">
-                <img class="slide_img slide_2" src="../images/projects/campaign/home-2-o.jpg" alt="">
-                <img class="slide_img slide_3" src="../images/projects/campaign/campaign-1-o.jpg" alt="">
-                <img class="slide_img slide_4" src="../images/projects/campaign/news-1-o.jpg" alt="">
-            </div> 
-          </div>
+          <!-- Slide 2 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/keivanArt/home-2-o-derivatives/home-2-o-300_x_200.jpg 1x, ../images/projects/keivanArt/home-2-o-derivatives/home-2-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/keivanArt/home-2-o-derivatives/home-2-o-600_x_400.jpg 1x, ../images/projects/keivanArt/home-2-o-derivatives/home-2-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/keivanArt/home-2-o-derivatives/home-2-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_2" src="../images/projects/keivanArt/home-2-o.jpg" alt="KeivanArt Home Page 2">
+          </picture>
+    
+          <!-- Slide 3 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/keivanArt/services-1-o-derivatives/services-1-o-300_x_200.jpg 1x, ../images/projects/keivanArt/services-1-o-derivatives/services-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/keivanArt/services-1-o-derivatives/services-1-o-600_x_400.jpg 1x, ../images/projects/keivanArt/services-1-o-derivatives/services-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/keivanArt/services-1-o-derivatives/services-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_3" src="../images/projects/keivanArt/services-1-o-derivatives/" alt="WheatScent Services Page 1">
+          </picture>
+    
+          <!-- Slide 4 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/keivanArt/services-2-o-derivatives/services-2-o-300_x_200.jpg 1x, ../images/projects/keivanArt/services-2-o-derivatives/services-2-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/keivanArt/services-2-o-derivatives/services-2-o-600_x_400.jpg 1x, ../images/projects/keivanArt/services-2-o-derivatives/services-2-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/keivanArt/services-2-o-derivatives/services-2-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_4" src="../images/projects/keivanArt/services-2-o.jpg" alt="WheatScent Services Page 2">
+          </picture>
+            
+        </div>
+      </div>
+      <!-- Description-->
+      <div class="project_description">
+        <div>
+          <h2>KeivanArt</h2>
+          <p>This project is an example of a website created by WordPress. Many modules have been installed and used to make the website more dynamic. Most of the default features have been modified to have complete control over elements. I have tried to add features which are not available by default, such as using SVGs. </p>
+        </div>
+        <div><a href="https://www.keivanart.com/">Click to visit the website</a></div>
+      </div>
+    </div>
+
+        <!-- Fourth Project: Campaign -->
+    <div id="campaign" class="c_project c_container">
+      <div class="project_slides">
+        <!-- Slideshow-->
+        <div class="c_slideshow">
+          <!-- Slide 1 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/campaign/home-1-o-derivatives/home-1-o-300_x_200.jpg 1x, ../images/projects/campaign/home-1-o-derivatives/home-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/campaign/home-1-o-derivatives/home-1-o-600_x_400.jpg 1x, ../images/projects/campaign/home-1-o-derivatives/home-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/campaign/home-1-o-derivatives/home-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_1" src="../images/projects/campaign/home-1-o.jpg" alt="Campaign Home Page 1">
+          </picture>
+
+          <!-- Slide 2 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/campaign/home-2-o-derivatives/home-2-o-300_x_200.jpg 1x, ../images/projects/campaign/home-2-o-derivatives/home-2-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/campaign/home-2-o-derivatives/home-2-o-600_x_400.jpg 1x, ../images/projects/campaign/home-2-o-derivatives/home-2-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/campaign/home-2-o-derivatives/home-2-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_2" src="../images/projects/campaign/home-2-o.jpg" alt="Campaign Home Page 2">
+          </picture>
+    
+          <!-- Slide 3 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/campaign/news-1-o-derivatives/news-1-o-300_x_200.jpg 1x, ../images/projects/campaign/news-1-o-derivatives/news-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/campaign/news-1-o-derivatives/news-1-o-600_x_400.jpg 1x, ../images/projects/campaign/news-1-o-derivatives/news-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/campaign/news-1-o-derivatives/news-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_3" src="../images/projects/campaign/news-1-o.jpg" alt="Campaign News Page 1">
+          </picture>
+
+          <!-- Slide 4 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/campaign/campaign-1-o-derivatives/campaign-1-o-300_x_200.jpg 1x, ../images/projects/campaign/campaign-1-o-derivatives/campaign-1-o-600_x_400.jpgg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/campaign/campaign-1-o-derivatives/campaign-1-o-600_x_400.jpg 1x, ../images/projects/campaign/campaign-1-o-derivatives/campaign-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/campaign/campaign-1-o-derivatives/campaign-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_4" src="../images/projects/campaign/campaign-1-o.jpg" alt="Campaign Campaign Page 2">
+          </picture>
+          
+
+        </div> 
+      </div>
           <!-- Description-->
           <div class="project_description">
             <div>
@@ -145,15 +255,42 @@
           </div>
         </div>
 
-        <!-- Fifth Project -->
+        <!-- Fifth Project: Sosa Art -->
         <div id="susaart" class="c_project c_container">
           <div class="project_slides">
-            <!-- Slideshow-->
-            <div class="c_slideshow">
-                <img class="slide_img slide_1" src="../images/projects/keivanimd/home-1-o.jpg" alt="">
-                <img class="slide_img slide_2" src="../images/projects/keivanimd/home-2-o.jpg" alt="">
-                <img class="slide_img slide_3" src="../images/projects/keivanimd/cataloge-1-o.jpg" alt="">
-                <img class="slide_img slide_4" src="../images/projects/keivanimd/blog-1-o.jpg" alt="">
+         <!-- Slideshow-->
+         <div class="c_slideshow">
+          <!-- Slide 1 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/keivanimd/home-1-o-derivatives/home-1-o-300_x_200.jpg 1x, ../images/projects/keivanimd/home-1-o-derivatives/home-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/keivanimd/home-1-o-derivatives/home-1-o-600_x_400.jpg 1x, ../images/projects/keivanimd/home-1-o-derivatives/home-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/keivanimd/home-1-o-derivatives/home-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_1" src="../images/projects/keivanimd/home-1-o.jpg" alt="SusaArt Home Page 1">
+          </picture>
+
+          <!-- Slide 2 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/keivanimd/home-2-o-derivatives/home-2-o-300_x_200.jpg 1x, ../images/projects/keivanimd/home-2-o-derivatives/home-2-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/keivanimd/home-2-o-derivatives/home-2-o-600_x_400.jpg 1x, ../images/projects/keivanimd/home-2-o-derivatives/home-2-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/keivanimd/home-2-o-derivatives/home-2-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_2" src="../images/projects/keivanimd/home-2-o.jpg" alt="SusaArt Home Page 2">
+          </picture>
+    
+          <!-- Slide 3 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/keivanimd/cataloge-1-o-derivatives/cataloge-1-o-300_x_200.jpg 1x, ../images/projects/keivanimd/cataloge-1-o-derivatives/cataloge-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/keivanimd/cataloge-1-o-derivatives/cataloge-1-o-600_x_400.jpg 1x, ./images/projects/keivanimd/cataloge-1-o-derivatives/cataloge-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="./images/projects/keivanimd/cataloge-1-o-derivatives/cataloge-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_3" src="../images/projects/keivanimd/cataloge-1-o.jpg" alt="SusaArt Catalog Page">
+          </picture>
+
+          <!-- Slide 4 -->
+          <picture >
+            <source media="(max-width:300px)" srcset="../images/projects/keivanimd/blog-1-o-derivatives/blog-1-o-300_x_200.jpg 1x, ../images/projects/keivanimd/blog-1-o-derivatives/blog-1-o-600_x_400.jpg 2x">
+            <source media="(max-width:600px)" srcset="../images/projects/keivanimd/blog-1-o-derivatives/blog-1-o-600_x_400.jpg 1x, ../images/projects/keivanimd/blog-1-o-derivatives/blog-1-o-1200_x_800.jpg 2x">
+            <source media="(max-width:1200px)" srcset="../images/projects/keivanimd/blog-1-o-derivatives/blog-1-o-1200_x_800.jpg 1x">
+            <img class="slide_img slide_4" src="../images/projects/keivanimd/blog-1-o.jpg" alt="SusaArt Blog Page">
+          </picture>
             </div> 
           </div>
           <!-- Description-->
@@ -162,35 +299,45 @@
               <h2>SusaArt</h2>
               <p>A great example of a website using Shopify. Shopify platform is customized for online shopping websites. By default, it has the capability of categorizing the products and making collections. The cart module is active and functional. Many free and attractive themes are provided. This website was a project for Content Management System course. "Pass: teach010</p>
             </div>
-            <div><a href="https://keivanimd.myshopify.com/">Click to visit the website</a></div>
-          </div>
-        </div>
+          <div><a href="https://keivanimd.myshopify.com/">Click to visit the website</a></div>
+      </div>
+    </div>
 
   </section>
     
   <section class="c_wrapper s_projects" id="p_p_graphic">
     <div><h1>Graphic</h1></div>
-
-<div class="graphi_project_container">
+    <div class="graphi_project_container">
       <!-- Poseter Project -->
-        <!-- Project Image-->
-        <div id="poster_img" class="graphic_img">
-          <img src="../images/projects/poster.jpg" alt="">
-        </div> 
+      <!-- Project Image-->
+      <div id="poster_img" class="graphic_img">
+        <picture >
+          <source media="(max-width:300px)" srcset="../images/projects/poster-derivatives/poster-300_x_452.jpg 1x, ../images/projects/poster-derivatives/poster-600_x_904.jpg 2x">
+          <source media="(max-width:600px)" srcset="../images/projects/poster-derivatives/poster-600_x_904.jpg 1x, ../images/projects/poster-derivatives/poster-1200_x_1809.jpg 2x">
+          <source media="(max-width:1200px)" srcset="../images/projects/poster-derivatives/poster-1200_x_1809.jpg 1x">
+          <img src="../images/projects/poster.jpg" alt="Horror Movie Poster">
+        </picture>
+      </div> 
         <!-- Description-->
-        <div id="poster_inf" class="project_description">
-          <div>
-            <h2>Poster</h2>
-            <p>A poster for a fictional horror movie. This poster is created using Adobe Photoshop. This project aimed to use photoshop features as much as possible. I used different kinds of brushes, filters, and layers to create this poster. This is one of my favourite artworks.</p>
-          </div>
+      <div id="poster_inf" class="project_description">
+        <div>
+          <h2>Poster</h2>
+          <p>A poster for a fictional horror movie. This poster is created using Adobe Photoshop. This project aimed to use photoshop features as much as possible. I used different kinds of brushes, filters, and layers to create this poster. This is one of my favourite artworks.</p>
         </div>
+      </div>
 
-  
+      
       <!-- Avatar Project -->
-        <!-- Project Image-->
-        <div id="avatar_img" class="graphic_img">
-          <img src="../images/projects/avatar.jpg" alt="">
-        </div> 
+      <!-- Project Image-->
+      <div id="avatar_img" class="graphic_img">
+        <picture >
+          <source media="(max-width:300px)" srcset="../images/projects/avatar-derivatives/avatar-300_x_195.jpg 1x, ../images/projects/avatar-derivatives/avatar-600_x_390.jpg 2x">
+          <source media="(max-width:600px)" srcset="../images/projects/avatar-derivatives/avatar-600_x_390.jpg 1x,../images/projects/avatar-derivatives/avatar-1200_x_781.jpg 2x">
+          <source media="(max-width:1200px)" srcset="../images/projects/avatar-derivatives/avatar-1200_x_781.jpg 1x">
+          <img src="../images/projects/avatar.jpg" alt="Avatar">
+        </picture>
+
+      </div> 
         <!-- Description-->
         <div id="avatar_inf" class="project_description">
           <div>
@@ -198,28 +345,25 @@
             <p>These avatars have been created using Adobe Illustrator. All elements are created and modified inside the application. Each avatar is proper for a different screen size. Using gradient filters has made these avatars so lovely.</p>
           </div>
         </div>
-
-</div>
-    
-
-    
+    </div>
+      
   </section>
-
 </main>
 
-<footer id="footer-placeholder"></footer>
+  <!-- A placeholder for footer - Replaced by script from ./pages/menu_foote.html -->
+    <footer id="footer-placeholder"></footer>
 
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>$.get("./menu_navigation_pages.html", function(data){ $("#nav-placeholder").replaceWith(data);});</script>
-<script>$.get("./menu_footer.html", function(data){ $("#footer-placeholder").replaceWith(data);});</script>
+    <!-- Scripts to replate footer-placeholder with contents -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>$.get("./menu_footer.html", function(data){ $("#footer-placeholder").replaceWith(data);});</script>
 
-    <script src="../foundation/js/vendor/jquery.js"></script>
-    <script src="../foundation/js/vendor/what-input.js"></script>
-    <script src="../foundation/js/vendor/foundation.js"></script>
-    <script src="../foundation/js/app.js"></script>
+        <script src="../foundation/js/vendor/jquery.js"></script>
+        <script src="../foundation/js/vendor/what-input.js"></script>
+        <script src="../foundation/js/vendor/foundation.js"></script>
+        <script src="../foundation/js/app.js"></script>
 
-<!--Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
   
   </body>

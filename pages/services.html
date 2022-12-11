@@ -1,10 +1,6 @@
-
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,8 +35,8 @@
   <header class="bg-dark text-light">
 
  <!-- Adds a hamburger menu from Bootstrap library-->
- <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" itemscope itemtype="http://schema.org/Organization">
-  <a class="navbar-brand" href="index.html" itemprop="url" href="http://www.address.com/"><img class="logo" src="../images/logo.svg" alt="Logo" itemprop="logo"></a>
+ <nav class="container navbar navbar-expand-sm navbar-dark bg-dark px-2" itemscope itemtype="http://schema.org/Organization">
+  <a class="navbar-brand" href="index.html" itemprop="url"><img class="logo" src="../images/logo.svg" alt="Logo" itemprop="logo"></a>
   <button 
     class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -66,7 +62,7 @@
       <!-- Tabs Menu-->
       <div class="cell medium-3">
         <ul class="vertical tabs" data-tabs id="example-tabs">
-          <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Custom Websites</a></li>
+          <li class="tabs-title is-active"><a role="button" href="#panel1v" aria-label="Tab one" >Custom Websites</a></li>
           <li class="tabs-title"><a href="#panel2v">Content Manageent Systems</a></li>
           <li class="tabs-title"><a href="#panel3v">Search Engin Optimization</a></li>
           <li class="tabs-title"><a href="#panel4v">Videography</a></li>
@@ -188,8 +184,10 @@
               <div class="media-object-section">
                 <h4>Graphics</h4>
                 <p>Creativity is a part of the process of content creation. Making a logo, a flyer, an ad, or a poser can grab the attention of viewers and increase the conversion rate. Adobe creative suite has provided many tools for designers to turn their idea and imagination into a final product. I have years of experience working with these applications, such as Adobe Illustrator and Adobe Photoshop. The following projects are some examples of my work in this field.</p>
-                <li><a href="./projects.html#adobe_poster">Adobe Photoshop: Movie Poster</a></li>
-                <li><a href="./projects.html#adobe_avatar">Adobe Illustrator Avatar</a></li>
+                <ul>
+                  <li><a href="./projects.html#adobe_poster">Adobe Photoshop: Movie Poster</a></li>
+                  <li><a href="./projects.html#adobe_avatar">Adobe Illustrator Avatar</a></li>
+                </ul>
               </div>
             </div>
           </div>
