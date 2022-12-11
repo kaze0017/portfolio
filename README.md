@@ -28,17 +28,17 @@ It includes for pages: Home. Projects, Services, and About pages
 
 ## Color Reference
 | Color             | Hex                                           |
-| ----------------- | --------------------------------------------- |
-| purple  | -![#A074C4](https://placehold.co/15x15/f03c15/1E1E1E.png)`#A074C4`|
-| blue-d  | -![#519ABA](https://placehold.co/15x15/f03c15/1E1E1E.png)`#519ABA`|
-| blue-b  | -![#569CD6](https://placehold.co/15x15/f03c15/1E1E1E.png)`#569CD6`|
-| orange  | -![#D14E28](https://placehold.co/15x15/f03c15/1E1E1E.png)`#D14E28`|
-| green_1 | -![#6A9955](https://placehold.co/15x15/f03c15/1E1E1E.png)`#6A9955`|
-| green_2 | -![#16825D](https://placehold.co/15x15/f03c15/1E1E1E.png)`#16825D`|
-| green_3 | -![#487E02](https://placehold.co/15x15/f03c15/1E1E1E.png)`#487E02`|
-| yellow  | -![#CBBD2D](https://placehold.co/15x15/f03c15/1E1E1E.png)`#CBBD2D`|
-| w5b0    | -![#F0F0F0](https://placehold.co/15x15/f03c15/1E1E1E.png)`#F0F0F0`|
-| w1b4    | -![#1E1E1E](https://placehold.co/15x15/f03c15/F0F0F0.png)`#1E1E1E`|
+| ----------------- | ------------------------------------------------------ |
+| purple  | ![#A074C4](https://placehold.co/15x15/A074C4/1E1E1E.png)`#A074C4`|
+| blue-d  | ![#519ABA](https://placehold.co/15x15/519ABA/1E1E1E.png)`#519ABA`|
+| blue-b  | ![#569CD6](https://placehold.co/15x15/569CD6/1E1E1E.png)`#569CD6`|
+| orange  | ![#D14E28](https://placehold.co/15x15/D14E28/1E1E1E.png)`#D14E28`|
+| green_1 | ![#6A9955](https://placehold.co/15x15/6A9955/1E1E1E.png)`#6A9955`|
+| green_2 | ![#16825D](https://placehold.co/15x15/16825D/1E1E1E.png)`#16825D`|
+| green_3 | ![#487E02](https://placehold.co/15x15/487E02/1E1E1E.png)`#487E02`|
+| yellow  | ![#CBBD2D](https://placehold.co/15x15/CBBD2D/1E1E1E.png)`#CBBD2D`|
+| w5b0    | ![#F0F0F0](https://placehold.co/15x15/F0F0F0/1E1E1E.png)`#F0F0F0`|
+| w1b4    | ![#1E1E1E](https://placehold.co/15x15/1E1E1E/F0F0F0.png)`#1E1E1E`|
 
 
 
