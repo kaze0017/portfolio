@@ -26,7 +26,7 @@
 
   </head>
   
-  <body class="text-white bg-body">
+  <body id="home_body" class="text-white bg-body">
 
     <!-- Loding screen - Partially inline styled to avoid displaying in the case of broken CSS-->
     <div class="loading bg-dark text-light text-center" style="transform: translate(-200vw, -200vh);">
@@ -36,7 +36,15 @@
       </div>
     </div>
 
-    <!-- Section one: Banner-->
+    <!-- Secction one: Banner-->
+    <div class="skiplink bg-dark">
+      <div class="container">
+        <ul>
+          <li><a href="#section_services">Skip to services section</a></li>
+          <li><a href="#section_projects">Skip to projects section</a></li>
+        </ul>
+      </div>
+    </div>
     <header class="bg-dark text-light mb-2">
       <!-- Adds a hamburger menu from Bootstrap library-->
       <nav class="container navbar navbar-expand-sm navbar-dark bg-dark px-2" itemscope itemtype="http://schema.org/Organization">
@@ -91,7 +99,7 @@
 
     <main>
 
-      <section class="section_row services container mt-5" itemscope itemtype="https://schema.org/Service">
+      <section id="section_services" class="section_row services container mt-5" itemscope itemtype="https://schema.org/Service">
 
         <!-- A row for services: includs two columns for general info (4*col) and services(8*col)-->
         <div class="row bg-dark">
@@ -212,7 +220,7 @@
       </section>
 
       <!-- Section: Projects -->
-      <section class="projects container mt-5">
+      <section id="section_projects" class="projects container mt-5">
         <div class="row bg-dark">
           <div class="col-lg-4 row p-4">
             <div class="col-lg-6 d-flex flex-column justify-content-center"><h2>Projects</h2><object data="./images/sections/check_list.svg"></object></div>
@@ -322,6 +330,7 @@
       </section>
     </main>
 
+    <div class="container pt-2 skiplink"><ul><li><a href="#home_body">Jump To Top</a></li></ul></div>
     <!-- A placeholder for footer - Replaced by script from ./pages/menu_foote.html -->
     <footer id="footer-placeholder"></footer>
 
