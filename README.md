@@ -30,7 +30,7 @@ It includes for pages: Home. Projects, Services, and About pages
 
 | Color             | Hex                                           |
 | ----------------- | --------------------------------------------- |
-| purple  | ![#A074C4](https://via.placeholder.com/10/0a192f?text=+)|
+| purple  | ![#A074C4](https://via.placeholder.com/10/0a192f?text=+) #A074C4|
 | blue-d  | ![#519ABA](https://via.placeholder.com/10/f8f8f8?text=+)|
 | blue-b  | ![#569CD6](https://via.placeholder.com/10/00b48a?text=+)|
 | orange  | ![#D14E28](https://via.placeholder.com/10/00b48a?text=+)|
